@@ -1,0 +1,47 @@
+.profile {
+    width: 100%;
+}
+
+.profile h3 {
+    font-weight: 500;
+    margin-top: 50px;
+}
+
+.plus-icon{
+    right:15px;
+    position: absolute;
+    width: 18px;
+}
+.minus-icon{
+    right:16px;
+    position: absolute;
+    width: 16px;
+}
+.accordion{
+    border:1px solid #407bffff;
+    border-radius: 14px ;
+    overflow: hidden;
+}
+.ant-collapse-content-box{
+    border-left:3px solid #407bffff;
+
+    background-color: #dbe6ff;
+    padding: 15px 30px ;
+}
+.ant-collapse-item{
+    border:1px solid #407bffff;
+    background-color: #fff;
+
+
+}
+.ant-collapse-item:first-of-type{
+    border: none;
+}
+.ant-collapse-item:nth-child(n){
+    border-left: none;
+    border-right:none;
+
+}
+.ant-collapse-header-text{
+    font-weight: 500;
+}

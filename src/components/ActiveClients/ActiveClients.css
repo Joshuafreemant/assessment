@@ -1,0 +1,48 @@
+.active-clients {
+    background: #fff;
+    width: 100%;
+    height: 420px;
+    padding: 5px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.active-clients h4 {
+    font-weight: 700;
+    margin: 0;
+
+}
+
+.active {
+    display: flex;
+    gap: 2px;
+    align-items: end;
+    margin-top: 20px;
+}
+
+.active h6 {
+    margin: 0px 0px 2px 0px;
+
+    font-size: 11px;
+}
+.radial-area{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    height: 100%;
+    padding: 0;
+    
+    }
+  
+    .radial-chart{
+        width: 65%;
+      
+    }
+    .info h4{
+        margin: 0;
+
+        font-size: 14px;
+        font-weight: 700;
+    }
+ 

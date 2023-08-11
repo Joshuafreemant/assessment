@@ -1,0 +1,37 @@
+.average-balance {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.average-h3 {
+    margin: 40px 0px 20px 0px;
+    font-weight: 500;
+}
+
+.balance-content {
+    border-right: 1px solid #407bff;
+    height: 100%;
+    padding: 35px 30px;
+    background: #fff;
+
+
+}
+
+.balance-content p {
+    font-weight: 500;
+}
+
+.balance-content:last-of-type {
+    border: none;
+
+}
+
+.balance-content h2 {
+    font-weight: 700;
+    font-size: 32px;
+    margin: 0;
+
+}
+

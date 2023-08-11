@@ -1,0 +1,14 @@
+.header-bg{
+    background: #2F74DD;
+    height: 70px;
+    width: 100%;
+    padding: 10px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+}
+.header-bg h3{
+    color:#fff;
+}

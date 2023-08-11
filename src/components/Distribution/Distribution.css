@@ -1,0 +1,94 @@
+.distribution-h3 {
+    margin: 40px 0px 20px 0px;
+    font-weight: 500;
+}
+
+.distribution-data {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+
+}
+
+.first,
+.second,
+.third,
+.fourth,
+.fifth {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.first label,
+.second label,
+.third label,
+.fourth label,
+.fifth label {
+    font-size: 11px;
+}
+
+.orange-bg {
+    width: 12px;
+    height: 12px;
+    background: #ffbc73ff;
+    border-radius: 50%;
+}
+
+.green-bg {
+    width: 12px;
+    height: 12px;
+    background: #15cc93ff;
+    border-radius: 50%;
+}
+
+.red-bg {
+    width: 12px;
+    height: 12px;
+    background: #ff725eff;
+    border-radius: 50%;
+}
+
+.blue-bg {
+    width: 12px;
+    height: 12px;
+    background: #2a38a4ff;
+    border-radius: 50%;
+}
+
+.blue-two-bg {
+    width: 12px;
+    height: 12px;
+    background: #407bffff;
+    border-radius: 50%;
+}
+
+.chart-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap:10px;
+}
+
+.box {
+    padding: 10px;
+    background-color: #fff;
+    margin: 20px 0px 10px 0px;
+    width: 32%;
+    flex-grow: 1;
+}
+
+.blue-bar {
+    background: #2a38a4ff;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 10px;
+}
+
+.blue-bar label {
+    font-weight: 500;
+}
+

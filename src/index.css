@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  font-family: 'Manrope', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #F5F7FA;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.active-status {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #4fd9aeff;
+}
+
+.dormant-status {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #ff725eff;
+
+}
+
+.agric-bg {
+  background: #c9ece2ff;
+  padding: 7px;
+  color: #04674bff;
+  font-weight: 500;
+}
+
+.corporate-bg {
+  background-color: #9bbaffff;
+  color: #002370ff;
+  padding: 7px;
+  font-weight: 500;
+}
+
+.loyalists-bg {
+  background: #ffe1c0ff;
+  color: #be6402ff;
+  padding: 7px;
+  font-weight: 500;
+
+}
+
+.micro-bg {
+  background: #d4d9ffff;
+  color: #2a38a4ff;
+  padding: 7px;
+  font-weight: 500;
+}
+
+.retail-bg {
+  background: #c4a2fcff;
+  color: #2d0076ff;
+  padding: 7px;
+  font-weight: 500;
+}
+
+.ant-table-pagination-right {
+  justify-content: center !important;
+  background-color: #fff;
+  padding: 5px;
+}
+
+.recharts-text {
+  font-size: 8px;
+  font-weight: bold;
+}
+
+
+
+.table-fonts {
+  font-weight: 400;
+  
+}
