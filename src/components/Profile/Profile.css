@@ -19,7 +19,7 @@
 }
 .accordion{
     border:1px solid #407bffff;
-    border-radius: 14px ;
+    border-radius: 0px ;
     overflow: hidden;
 }
 .ant-collapse-content-box{

@@ -1,11 +1,9 @@
 import * as React from 'react';
 import './Profile.css'
 import { Collapse } from 'antd';
-import { CaretRightOutlined, CaretDownOutlined } from '@ant-design/icons';
-import CalenderIcon from "../../assets/Calendar.png"
+
 import PlusIcon from "../../assets/Plus.png"
 import MinusIcon from "../../assets/minuss.png"
-import { useState } from 'react';
 
 
 const { Panel } = Collapse;
