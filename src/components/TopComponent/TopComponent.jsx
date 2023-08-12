@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './TopComponent.css'
-import { RxCaretDown } from "react-icons/rx";
+
 import CalenderIcon from "../../assets/Calendar.png"
 import CaretContent from '../../components/CaretContent/CaretContent';
 import LoanPeriod from '../../components/LoanPeriod/LoanPeriod';
