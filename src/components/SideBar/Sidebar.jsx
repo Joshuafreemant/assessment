@@ -23,7 +23,7 @@ function SideBar() {
                     </Link>
                     <Link to="/customer">
 
-                    {location.pathname === '/customer' ?
+                    {location.pathname.includes('/customer') ?
                         <DocumentIcon fill="#407bffff" />:
                         <DocumentIcon fill="#788098" />}
 
