@@ -37,7 +37,7 @@ function Customer() {
             <div className="customer-filter-action">
                 <div className="customer-left-col">
                     <div className="segment-col" onClick={() => setSearchOpen(prev => !prev)}>
-                        <ProfileIcon width={17} height={18}/>
+                        <ProfileIcon width={19} height={20}/>
                         <label htmlFor="">
                             Segment Customers
                         </label>
