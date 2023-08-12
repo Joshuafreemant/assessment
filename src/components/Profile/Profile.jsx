@@ -2,8 +2,7 @@ import * as React from 'react';
 import './Profile.css'
 import { Collapse } from 'antd';
 
-import PlusIcon from "../../assets/Plus.png"
-import MinusIcon from "../../assets/minuss.png"
+import { MinusIcon,PlusIcon } from '../../assets/Icons';
 
 
 const { Panel } = Collapse;
@@ -19,9 +18,11 @@ function Profile() {
             <Collapse className='accordion'
                 expandIcon={({ isActive }) =>
                     isActive ? (
-                        <img src={MinusIcon} alt="" className='minus-icon'  />
+                        <div className='minus-icon'> <MinusIcon/></div>
+                       
                     ) : (
-                        <img src={PlusIcon} alt="" className='plus-icon' />
+                        
+                        <div className='plus-icon'> <PlusIcon/></div>
 
                     )
                 }

@@ -1,8 +1,6 @@
 import React from 'react'
 import './Overview.css'
-import ProfileIcon from "../../assets/Profile.png"
-import WalletIcon from "../../assets/Wallet.png"
-import DollarIcon from "../../assets/dollar-square.png"
+import { WalletIcon, DollarIcon, ProfileIcon } from '../../assets/Icons'
 
 function Overview() {
 
@@ -13,19 +11,22 @@ function Overview() {
             <h3 className='overview-h3'>OVERVIEW</h3>
             <div className='overview-container'>
                 <div className="overview-content">
-                    <img src={ProfileIcon} alt="" />
+                    <ProfileIcon width={24} height={25}/>
+
                     <p>Total Customers</p>
                     <h2>1.11 Million</h2>
                 </div>
 
                 <div className="overview-content">
-                    <img src={DollarIcon} alt="" />
+                    <DollarIcon />
+
                     <p>Total Transactional Value</p>
                     <h2>124 Billion</h2>
                 </div>
 
                 <div className="overview-content">
-                    <img src={WalletIcon} alt="" />
+
+                    <WalletIcon />
                     <p>Average Monthly Balance</p>
                     <h2>₦200,562</h2>
                 </div>

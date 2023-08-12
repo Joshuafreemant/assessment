@@ -1,13 +1,11 @@
 import React from 'react'
 import './Customer.css'
-import ProfileIcon from "../../assets/Profile.png"
-import FilterIcon from "../../assets/Filter.png"
 import { Table } from 'antd';
 import { columns, dataSource } from '../../data';
 import BankProfile from '../../components/BankProfile/BankProfile';
-import CaretContent from '../../components/CaretContent/CaretContent';
 import { useState } from 'react';
 import SearchBar from '../../components/SearchBar/SearchBar';
+import { FilterIcon,ProfileIcon } from '../../assets/Icons';
 function Customer() {
 
     const [searchQuery, setSearchQuery] = useState('');
@@ -39,7 +37,7 @@ function Customer() {
             <div className="customer-filter-action">
                 <div className="customer-left-col">
                     <div className="segment-col" onClick={() => setSearchOpen(prev => !prev)}>
-                        <img src={ProfileIcon} alt="" />
+                        <ProfileIcon width={17} height={18}/>
                         <label htmlFor="">
                             Segment Customers
                         </label>
@@ -57,7 +55,7 @@ function Customer() {
                     <button className="clear-btn" onClick={handleClear}>Clear</button>
                 </div>
                 <div className="customer-right-col">
-                    <img src={FilterIcon} alt="" />
+                    <FilterIcon/>
                     <button className="sort">Sort</button>
 
                 </div>

@@ -1,16 +1,12 @@
 import React from 'react'
 import './Sidebar.css'
-import homeIcon from "../../assets/Home.png"
-import { DocumentIcon, HomeIcon } from "../../assets/Icons"
-import LogoutIcon from "../../assets/Logout.png"
+import { DocumentIcon, HomeIcon, LogOutIcon } from "../../assets/Icons"
 import { Link } from "react-router-dom";
 import { useLocation } from 'react-router-dom';
 
 function SideBar() {
     const location = useLocation();
-//     const isCustomerProfileRoute = location.pathname === '/customer';
-// console.log(isCustomerProfileRoute)
-// // 
+
     return (
         <>
             <div className='sidebar'>
@@ -31,7 +27,7 @@ function SideBar() {
 
                 </div>
                 <div className="logout">
-                    <img src={LogoutIcon} alt="" />
+                    <LogOutIcon/>
 
                 </div>
             </div>

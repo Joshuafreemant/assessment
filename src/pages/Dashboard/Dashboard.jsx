@@ -1,7 +1,4 @@
-import React, { useState } from 'react'
 import './Dashboard.css'
-import { RxCaretDown } from "react-icons/rx";
-import CalenderIcon from "../../assets/Calendar.png"
 import TotalPopulation from '../../components/TotalPopulation/TotalPopulation';
 import ActiveClients from '../../components/ActiveClients/ActiveClients';
 import AverageAge from '../../components/AverageAge/AverageAge';

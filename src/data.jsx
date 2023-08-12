@@ -1,5 +1,5 @@
-import ActiveIcon from "./assets/active.png"
-import DormantIcon from "./assets/dormant.png"
+import { DormantIcon,ActiveIcon } from "./assets/Icons";
+
 
 export const dataSource = [
   {
@@ -194,12 +194,12 @@ export const columns = [
       <>
         {
           key === 'ACTIVE' && <span className="active-status">
-            <img src={ActiveIcon} alt="" />
+            <ActiveIcon/>
             ACTIVE
           </span>}
         {
           key === 'DORMANT' && <span className="dormant-status">
-            <img src={DormantIcon} alt="" />
+            <DormantIcon/>
             DORMANT
           </span>}
       </>

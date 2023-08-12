@@ -1,11 +1,10 @@
 import React, { useState } from 'react'
 import './TopComponent.css'
-
-import CalenderIcon from "../../assets/Calendar.png"
 import CaretContent from '../../components/CaretContent/CaretContent';
 import LoanPeriod from '../../components/LoanPeriod/LoanPeriod';
 import { useLocation } from 'react-router-dom';
 import { SlArrowDown } from "react-icons/sl";
+import { CalendarIcon } from '../../assets/Icons';
 function TopComponent() {
     const location = useLocation();
     const isCustomerProfileRoute = location.pathname === '/customer-profile';
@@ -32,7 +31,9 @@ function TopComponent() {
                         Loan Data Period
                     </label>
 
-                    <img src={CalenderIcon} alt={CalenderIcon} onClick={() => setPeriodOpen(prev => !prev)} />
+                    <div className="" onClick={() => setPeriodOpen(prev => !prev)}>
+                        <CalendarIcon />
+                    </div>
                     {periodOpen && <LoanPeriod />}
                 </div>
 
