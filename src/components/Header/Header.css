@@ -1,5 +1,5 @@
 .header-bg{
-    background: #2F74DD;
+    background: #F7F7FB;
     height: 70px;
     width: 100%;
     padding: 10px 40px;
@@ -11,4 +11,26 @@
 }
 .header-bg h3{
     color:#fff;
+}
+.right{
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+.notifications{
+    display: flex;
+    align-items: center;
+    gap:10px;
+
+}
+.right .separate{
+    width: 2px;
+    height: 25px;
+    background-color: #DBE0E6;
+}
+.user{
+    display: flex;
+    align-items: center;
+    gap:10px;
+
 }

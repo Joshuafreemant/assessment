@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@500;600&display=swap');
 * {
   box-sizing: border-box;
 }
@@ -8,10 +8,9 @@ body,
 #root {
   margin: 0;
   padding: 0;
-  font-family: 'Manrope', sans-serif;
+  font-family: 'Lato', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #F5F7FA;
   width: 100%;
   overflow-x: hidden;
 }
@@ -20,52 +19,33 @@ body,
   display: flex;
   align-items: center;
   gap: 10px;
-  color: #4fd9aeff;
+  background-color: #d3f8ea;
+  color: #255f07;
+  font-weight:700;
+  font-size:11px;
+  padding:5px;
+  border-radius:5px;
+  width:50%;
+  align-items: center;
+  justify-content: center;
 }
 
-.dormant-status {
+.inactive-status {
   display: flex;
   align-items: center;
   gap: 10px;
-  color: #ff725eff;
+  color: #3a516b;
+  background-color: #edeff3;
+  font-weight:700;
+  font-size:11px;
+  padding:5px;
+  border-radius:5px;
+  width:50%;
+  align-items: center;
+  justify-content: center;
 
 }
 
-.agric-bg {
-  background: #c9ece2ff;
-  padding: 7px;
-  color: #04674bff;
-  font-weight: 500;
-}
-
-.corporate-bg {
-  background-color: #9bbaffff;
-  color: #002370ff;
-  padding: 7px;
-  font-weight: 500;
-}
-
-.loyalists-bg {
-  background: #ffe1c0ff;
-  color: #be6402ff;
-  padding: 7px;
-  font-weight: 500;
-
-}
-
-.micro-bg {
-  background: #d4d9ffff;
-  color: #2a38a4ff;
-  padding: 7px;
-  font-weight: 500;
-}
-
-.retail-bg {
-  background: #c4a2fcff;
-  color: #2d0076ff;
-  padding: 7px;
-  font-weight: 500;
-}
 
 .ant-table-pagination-right {
   justify-content: center !important;
@@ -73,15 +53,18 @@ body,
   padding: 5px;
 }
 
-.recharts-text {
-  font-size: 8px;
-  font-weight: bold;
-}
-
-
 
 .table-fonts {
-  font-weight: 400;
-  font-size: 16px;
+  font-weight: 600;
+  font-size: 13px;
   
+}
+.period-fonts {
+  font-weight: 500;
+  font-size: 12px;
+  color: #141736;
+  
+}
+.table-fonts a{
+  color: #000;
 }

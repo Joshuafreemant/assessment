@@ -1,23 +1,60 @@
 .dashboard{
     padding: 10px;
-   margin-left: 105px;
+   margin-left: 16%;
    margin-top: 70px;
-   width: 90%;
+   width: 84%;
 }
 .dashboard h3{
     font-weight: 600;
 }
-
-.grid-col-two{
-    display: grid;
-    margin-top: 30px;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+.table-bg{
+    background-color: white;
+    box-shadow: 3px 3px 8px rgba(206, 202, 202, 0.7);
+    padding: 10px 20px;
+    border-radius: 15px;
 }
+.button-bars{
+    display: flex;
+    gap:20px;
+    margin-bottom: 20px;
 
-.grid-col-twoo{
-    display: grid;
-    margin-top: 30px;
-    grid-template-columns: 3fr 4fr;
-    gap: 20px;
+}
+.button-bars p{
+    font-weight: 600;
+    color: #61758F;
+    font-size: 14px;
+}
+h4{
+    margin: 0;
+    color: #141736;
+
+}
+.text-group{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+margin: 0 !important;
+
+}
+.per-diem{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #D9DDE4;
+}
+.per-diem .texts{
+    font-size: 11px;
+    color: #61758F;
+    font-weight: 600;
+    margin-top:-5px;
+}
+.per-diem .button{
+    background-color: #6261b5;
+    display: flex;
+    padding: 8px;
+    border-radius: 7px;
+    color: #fff;
+    font-size: 12px;
+    gap:3px;
 }

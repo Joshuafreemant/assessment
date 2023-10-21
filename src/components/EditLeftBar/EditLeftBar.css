@@ -1,0 +1,29 @@
+.edit-left-bar{
+    /* margin-top: 70px; */
+    width: 15%;
+    background-color: #f7f7fb;
+    height: 100vh;
+    padding: 70px 40px;
+
+}
+.steps{
+    display: flex;
+    align-items: center;
+    margin: 20px 0px;
+    gap:15px;
+}
+.steps p, .steps span{
+    margin: 0;
+    font-size: 11px;
+    color: #61758F;
+    font-weight: 600;
+
+}
+.steps span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius:50%;
+}

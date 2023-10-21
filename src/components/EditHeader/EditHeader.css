@@ -1,0 +1,22 @@
+.header-bg{
+    background: #fff;
+    height: 60px;
+    width: 100%;
+    padding: 10px 40px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+    top:0;
+    box-shadow: 3px 3px 8px rgba(206, 202, 202, 0.7);
+
+}
+.content{
+    display: flex;
+    gap:20px;
+    align-items: center;
+}
+.content h5{
+    font-size: 20px;
+    color: #141736;
+}

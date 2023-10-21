@@ -1,260 +1,160 @@
-import { DormantIcon,ActiveIcon } from "./assets/Icons";
-
+import { Link } from "react-router-dom";
+import { DeleteIcon, MoreIcon, TableIcon } from "./assets/Icons";
 
 export const dataSource = [
   {
-    key: '1',
-    customerName: 'John Doe',
-    customerId: "1DNFEA3",
-    category: 'AGRIC CLIENT',
-    loanPeriod: 'NOV 2020 - MAY 2021',
-    status: 'ACTIVE',
+    key: "1",
+    perDierName: "Per diem A",
+    period: "01/04/2023 - 31/03/2024",
+    status: "ACTIVE",
+    icon: <MoreIcon />,
   },
   {
-    key: '2',
-    customerName: 'John Doe',
-    customerId: "1DNFEA3",
-    category: 'AGRIC CLIENT',
-    loanPeriod: 'NOV 2020 - MAY 2021',
-    status: 'ACTIVE',
+    key: "2",
+    perDierName: "Per diem B",
+    period: "01/04/2023 - 31/03/2024",
+    status: "ACTIVE",
+    icon: <MoreIcon />,
   },
   {
-    key: '3',
-    customerName: 'Jane Doe',
-    customerId: "1DNFDHF",
-    category: 'CORPORATES',
-    loanPeriod: 'NOV 2020 - MAY 2021',
-    status: 'DORMANT',
+    key: "3",
+    perDierName: "Per diem C",
+    period: "01/04/2023 - 31/03/2024",
+    status: "INACTIVE",
+    icon: <MoreIcon />,
   },
   {
-    key: '4',
-    customerName: 'Dan Mike',
-    customerId: "1DJKEA3",
-    category: 'LOYALISTS',
-    loanPeriod: 'NOV 2020 - MAY 2021',
-    status: 'DORMANT',
+    key: "4",
+    perDierName: "Per diem D",
+    period: "01/04/2023 - 31/03/2024",
+    status: "ACTIVE",
+    icon: <MoreIcon />,
   },
   {
-    key: '5',
-    customerName: 'Dan Mike',
-    customerId: "1DJKEA3",
-    category: 'RETAIL TECH',
-    loanPeriod: 'NOV 2020 - MAY 2021',
-    status: 'DORMANT',
+    key: "5",
+    perDierName: "Per diem E",
+    period: "01/04/2023 - 31/03/2024",
+    status: "ACTIVE",
+    icon: <MoreIcon />,
   },
   {
-    key: '6',
-    customerName: 'John Bell',
-    customerId: "1DNFEA3",
-    category: 'RETAIL TECH',
-    loanPeriod: 'NOV 2020 - MAY 2021',
-    status: 'DORMANT',
+    key: "6",
+    perDierName: "Per diem F",
+    period: "01/04/2023 - 31/03/2024",
+    status: "ACTIVE",
+    icon: <MoreIcon />,
   },
   {
-    key: '7',
-    customerName: 'John Bell',
-    customerId: "1DNFEA3",
-    category: 'MICRO TECH',
-    loanPeriod: 'NOV 2020 - MAY 2021',
-    status: 'ACTIVE',
+    key: "7",
+    perDierName: "Per diem G",
+    period: "01/04/2023 - 31/03/2024",
+    status: "ACTIVE",
+    icon: <MoreIcon />,
   },
   {
-    key: '8',
-    customerName: 'John Bell',
-    customerId: "1DNFEA3",
-    category: 'MICRO TECH',
-    loanPeriod: 'NOV 2020 - MAY 2021',
-    status: 'ACTIVE',
+    key: "8",
+    perDierName: "Per diem H",
+    period: "01/04/2023 - 31/03/2024",
+    status: "ACTIVE",
+    icon: <MoreIcon />,
   },
   {
-    key: '9',
-    customerName: 'John Bell',
-    customerId: "1DNFEA3",
-    category: 'AGRIC CLIENT',
-    loanPeriod: 'NOV 2020 - MAY 2021',
-    status: 'DORMANT',
-  },
-  {
-    key: '10',
-    customerName: 'Joe Bryan',
-    customerId: "1DNFEA3",
-    category: 'CORPORATES',
-    loanPeriod: 'NOV 2020 - MAY 2021',
-    status: 'ACTIVE',
-  },
-  {
-    key: '11',
-    customerName: 'John Bell',
-    customerId: "1DNFEA3",
-    category: 'CORPORATES',
-    loanPeriod: 'NOV 2020 - MAY 2021',
-    status: 'DORMANT',
-  },
-  {
-    key: '12',
-    customerName: 'John Bell',
-    customerId: "1DNFEA3",
-    category: 'CORPORATES',
-    loanPeriod: 'NOV 2020 - MAY 2021',
-    status: 'DORMANT',
+    key: "9",
+    perDierName: "Per diem I",
+    period: "01/04/2023 - 31/03/2024",
+    status: "ACTIVE",
+    icon: <MoreIcon />,
   },
 ];
 
 export const dataSourceTwo = [
   {
-    key: '1',
-    customer: 'EGF BANK CUSTOMERS',
-    totalNumber: "1,113,040 Customers",
-    transValue: 'KES 124Bn',
-    loansTaken: '200,000 Ksh',
-    loansPerformance: [
-      "94% Normal",
-      "1.85% Watch",
-      "4.17% NPL"
-    ],
+    key: "1",
+    icon:<TableIcon/>,
+    rateName: "Trip is longer than 14 days",
+    tripDuration: "Trip Duration: Longer than 14 Days",
+    appliedRate: "80%",
+    delete: <DeleteIcon/>,
   },
   {
-    key: '2',
-    customer: 'NON-EGF BANK CUSTOMERS',
-    totalNumber: "7,903,091 Customers",
-    transValue: 'KES 943Bn',
-    loansTaken: '22.2M Loans Taken Total Value of 1.18Tn',
-    loansPerformance: [
-      "92.84% Normal",
-      "1.58% Watch",
-      "5.58% NPL"
-    ],
-  }
-
-
-
+    key: "2",
+    icon:<TableIcon/>,
+    rateName: "Trip is longer than 14 days",
+    tripDuration: "Trip Duration: Longer than 14 Days",
+    appliedRate: "80%",
+    delete: <DeleteIcon/>,
+  },
 ];
-
 
 export const columns = [
   {
-    title: 'CUSTOMER NAME',
-    dataIndex: 'customerName',
-    key: 'customerName',
+    title: "PER DIEM NAME",
+    dataIndex: "perDierName",
+    key: "perDierName",
     render: (key) => (
       <>
         <span className="table-fonts">
-          {key}
+          
+          <Link to="/edit">{key}</Link>
         </span>
-
       </>
-
     ),
   },
   {
-    title: 'CUSTOMER ID',
-    dataIndex: 'customerId',
-    key: 'customerId',
-  },
-  {
-    title: 'CATEGORY',
-    dataIndex: 'category',
-    key: 'category',
+    title: "PERIOD",
+    dataIndex: "period",
+    key: "period",
     render: (key) => (
       <>
-        {key === 'AGRIC CLIENT' && <span className="agric-bg">
-          AGRIC CLIENT
-        </span>}
-        {key === 'CORPORATES' && <span className="corporate-bg">
-          CORPORATES
-        </span>}
-
-        {key === 'LOYALISTS' && <span className="loyalists-bg">
-          LOYALISTS
-        </span>}
-
-        {key === 'RETAIL TECH' && <span className="retail-bg">
-          RETAIL TECH
-        </span>}
-
-        {key === 'MICRO TECH' && <span className="micro-bg">
-          MICRO TECH
-        </span>}
-
-
+        <span className="period-fonts">{key}</span>
       </>
-
     ),
   },
   {
-    title: 'LOAN PERIOD',
-    dataIndex: 'loanPeriod',
-    key: 'loanPeriod',
-  },
-  {
-    title: 'STATUS',
-    dataIndex: 'status',
-    key: 'status',
+    title: "STATUS",
+    dataIndex: "status",
+    key: "status",
     render: (key) => (
       <>
-        {
-          key === 'ACTIVE' && <span className="active-status">
-            <ActiveIcon/>
-            ACTIVE
-          </span>}
-        {
-          key === 'DORMANT' && <span className="dormant-status">
-            <DormantIcon/>
-            DORMANT
-          </span>}
+        {key === "ACTIVE" && <span className="active-status">ACTIVE</span>}
+        {key === "INACTIVE" && (
+          <span className="inactive-status">INACTIVE</span>
+        )}
       </>
     ),
-
   },
-
+  {
+    title: "",
+    dataIndex: "icon",
+    key: "",
+  },
 ];
-
-
 
 export const columnTwo = [
   {
-    title: 'CUSTOMERS',
-    dataIndex: 'customer',
-    key: 'customer',
+    title: "",
+    dataIndex: "icon",
+    key: "icon",
   },
   {
-    title: 'TOTAL NUMBER',
-    dataIndex: 'totalNumber',
-    key: 'totalNumber',
+    title: "RATE NAME",
+    dataIndex: "rateName",
+    key: "rateName",
   },
   {
-    title: 'TRANSACTION VALUE',
-    dataIndex: 'transValue',
-    key: 'transValue',
+    title: "CONDITION",
+    dataIndex: "tripDuration",
+    key: "totalNumber",
   },
   {
-    title: 'LOANS TAKEN',
-    dataIndex: 'loansTaken',
-    key: 'loansTaken',
+    title: "APPLIED RATE(% OF DAILY RATES)",
+    dataIndex: "appliedRate",
+    key: "transValue",
   },
   {
-    title: 'LOAN PERFORMANCE',
-    dataIndex: 'loansPerformance',
-    key: 'loansPerformance',
-    render: (key) => (
-      <>
-        {
-          key.map((value, i) => {
-
-            return (<ul key={i} className="ant-list">
-              <li>
-                {value}
-              </li>
-            </ul>)
-
-
-          })
-        }
-      </>
-
-    ),
-  },
-
-
-
+    title: "",
+    dataIndex: "delete",
+    key: "delete",
+  }
+  
 ];

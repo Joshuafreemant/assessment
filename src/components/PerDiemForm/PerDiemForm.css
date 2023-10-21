@@ -1,0 +1,62 @@
+.perdiem{
+    padding: 10px 20px;
+    border-bottom: 1px solid #D9DDE4;
+
+}
+.perdiemform{
+    padding: 40px 20px;
+}
+.form{
+display: flex;
+flex-direction: column;
+gap: 15px;
+}
+.input-group{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.input-group label{
+    font-size: 12.5px;
+    font-weight: 600;
+    color: #61758F;
+
+}
+.icon-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fb;
+    border: 1px solid #D9DDE4;
+    padding: 5px;
+    border-radius: 5px;
+
+}
+.input-group .input{
+    padding: 10px;
+    border-radius: 5px;
+    width: 60%;
+    background-color: #f8f9fb;
+    border: 1px solid #D9DDE4;
+    outline: 1px solid #D9DDE4;
+}
+.half-input{
+    display: flex;
+    gap:5px;
+    width: 60%;
+    align-items: center;
+    justify-content: space-between;
+}
+.half-input .icon-box{
+    width: 46%;
+}
+.separator{
+    width: 8%;
+    height: 1px;
+    background-color: #D9DDE4;
+}
+.icon-box input{
+    border: none;
+    background: transparent;
+}

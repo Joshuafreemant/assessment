@@ -1,0 +1,67 @@
+.set-condition{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #D9DDE4;
+    padding: 10px 20px;
+
+}
+.condition{
+    padding-top:80px ;
+    width: 82%;
+    background-color: #fff;
+}
+.set-condition .texts{
+    font-size: 11px;
+    color: #61758F;
+    font-weight: 600;
+    margin-top:-5px;
+    
+}
+.table{
+    padding: 20px;
+
+}
+.set-condition .button{
+    background-color: #6261b5;
+    display: flex;
+    padding: 8px;
+    border-radius: 7px;
+    color: #fff;
+    font-size: 12px;
+    gap:3px;
+}
+.condition-btn{
+    margin-top: 180px;
+    border-top: 1px solid #D9DDE4;
+
+}
+.condition-btn .save-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    padding: 0px 20px;
+  }
+  .condition-btn .save-group .next {
+    background-color: #6261b5;
+    color: #fff;
+    border-radius: 3px;
+    padding: 7px 12px;
+    border: none;
+    cursor: pointer;
+  }
+  .btn-gap{
+    display: flex;
+    gap:10px;
+    align-items: center;
+  }
+  .condition-btn .save-group .save, .condition-btn .save-group .prev {
+    border: 1px solid #6261b5;
+    color: #6261b5;
+    border-radius: 3px;
+    padding: 7px;
+    cursor: pointer;
+  }
+  

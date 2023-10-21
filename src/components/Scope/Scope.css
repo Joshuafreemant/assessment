@@ -1,0 +1,130 @@
+.scope {
+  border-bottom: 1px solid #D9DDE4;
+  padding: 30px 20px;
+}
+.scope-h4 {
+  color: #141736;
+  font-size: 20px;
+}
+.scope-texts {
+  font-size: 13px;
+  color: #61758f;
+  font-weight: 600;
+  margin-top: 2;
+  margin-bottom: 0;
+}
+.available .texts {
+  font-size: 13px;
+  color: #90a0bb;
+  font-weight: 600;
+  margin-top: 2;
+  margin-bottom: 0;
+}
+.buttons {
+  display: flex;
+  margin-top: 10px;
+  gap: 30px;
+}
+.btn-group {
+  display: flex;
+  gap: 10px;
+}
+.btn-group label {
+  font-size: 13px;
+}
+.btn-group .buton-div {
+  /* padding: 2px; */
+  border: 1px solid #61758f;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+}
+.buton-div button {
+  border: none;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  padding: 5px;
+}
+.form-select {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+
+  flex: 1;
+}
+.select-dropdown {
+  display: flex;
+  align-items: center;
+  background-color: #f8f9fb;
+  border: 1px solid #bcbdc1;
+  padding: 10px;
+  /* gap: 100px; */
+  border-radius: 3px;
+  width: 170px;
+  justify-content: space-between;
+}
+.select-dropdown label {
+  font-size: 13px;
+}
+.select-option {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  width: 100%;
+}
+.css-b62m3t-container {
+  width: 100%;
+  flex: 1;
+  display: flex;
+}
+.form-select label {
+  font-size: 11px;
+  font-weight: 600;
+}
+.joint-form {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  gap: 5px;
+}
+.joint-form .and{
+    font-family: 'Overpass Mono', monospace;
+    font-size:12px;
+}
+.form-column {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+}
+.save-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  padding: 0px 20px;
+}
+.save-group .next {
+  background-color: #6261b5;
+  color: #fff;
+  border-radius: 3px;
+  padding: 7px 12px;
+  border: none;
+    cursor: pointer;
+
+}
+.save-group .save {
+  border: 1px solid #6261b5;
+  color: #6261b5;
+  border-radius: 3px;
+  padding: 7px;
+    cursor: pointer;
+
+}
