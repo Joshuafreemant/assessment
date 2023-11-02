@@ -9,11 +9,11 @@
 }
 @font-face {
   font-family: 'Rosindale';
-  src:  url('/public/Roslindale\ Text\ Regular.woff') format('woff'); 
+  src:  url('/public/Roslindale_Text_Regular.woff') format('woff'); 
 }
 @font-face {
   font-family: 'Rosindale Light';
-  src:  url('/public/Roslindale\ Display\ Condensed\ Light.woff') format('woff'); 
+  src:  url('/public/Roslindale_Condensed_Light.woff') format('woff'); 
 }
 @font-face {
   font-family: 'Gerova';
@@ -34,11 +34,11 @@ body,
 }
 
 .start{
-  font-family: "Rosindale";
+  font-family: "Rosindale" !important;
 }
 
 .animate-highlight{
-  font-family: "Rosindale Light";
+  font-family: "Rosindale Light" !important;
   
 }
 .pressura{
