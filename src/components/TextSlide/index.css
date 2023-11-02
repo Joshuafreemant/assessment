@@ -1,0 +1,29 @@
+.text-slide {
+  height: 100vh;
+  background-color: #a4a88c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.text-slide h1 {
+  font-size: 250px;
+  color: #fce9b3;
+}
+@media only screen and (max-width: 768px) {
+  .text-slide {
+    height: 50vh;
+  }
+  .text-slide h1 {
+    font-size: 150px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1025px) {
+   
+    .text-slide {
+        height: 30vh;
+      }
+      .text-slide h1 {
+        font-size: 180px;
+      }
+  }
