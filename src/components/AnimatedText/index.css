@@ -180,7 +180,7 @@ section {
     font-size: 35px;
   }
   .highlighted-text {
-    top: 3.5px;
+    top: 0px;
   }
   .animated-zoom {
     font-size: 50px;
@@ -199,6 +199,9 @@ section {
     width: 100%;
     text-align: left;
     padding: 0px 10px;
+  }
+  .free-text {
+    margin: 40px 0px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1025px) {

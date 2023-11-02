@@ -1,16 +1,19 @@
 .video-container {
   position: relative;
-  height: 100vh;
   overflow: hidden;
 }
 
-#video-background {
-  object-fit: cover;
-  background-position: center;
-  width: 100%;
+.video-background {
+  width: 120%;
   height: 100%;
 }
 
+.fullscreen-video-wrap {
+  position: relative;
+  margin-bottom: -5px;
+  width: 100%;
+  overflow: hidden;
+}
 .text-overlay {
   position: absolute;
   top: 50%;
@@ -67,7 +70,6 @@
   width: 65px;
   height: 43px;
   z-index: 1000;
-
 }
 .red-dot {
   position: absolute;
@@ -87,7 +89,6 @@
   }
   .text-overlay-p {
     top: 12%;
-   
   }
   .text-overlay-p p {
     font-size: 20px;
@@ -106,7 +107,6 @@
   .text-overlay h1 {
     font-size: 145px;
     transform: rotate(-90deg);
-
   }
   .text-overlay-p p {
     font-size: 28px;
