@@ -27,6 +27,7 @@
   transform: translate(-50%, -50%); /* Center the text container */
   padding: 20px;
   text-align: center;
+  z-index: 1000;
 }
 
 .text-overlay h1 {
@@ -64,6 +65,8 @@
 .dropdown-overlay:hover {
   width: 65px;
   height: 43px;
+  z-index: 1000;
+
 }
 .red-dot {
   position: absolute;
@@ -73,6 +76,7 @@
   border-radius: 50%;
   width: 15px;
   height: 15px;
+  z-index: 1000;
 }
 @media only screen and (max-width: 768px) {
   /* Add your tablet-specific styles here */
