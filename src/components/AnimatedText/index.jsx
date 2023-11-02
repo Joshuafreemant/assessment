@@ -47,6 +47,10 @@ const AnimatedText = () => {
 
       <div className="services">
         <button className="start">CORE SERVICES</button>
+        <div className="mobile">
+          <p>CORE</p>
+          <p>SERVICES</p>
+        </div>
         <div className="line"></div>
 
         <div className="title-text">

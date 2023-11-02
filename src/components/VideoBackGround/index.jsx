@@ -5,22 +5,13 @@ import { SlArrowDown } from "react-icons/sl";
 
 const VideoBackground = () => {
   return (
-    <div className="fullscreen-video-wrap">
+    <div className="video-container">
       <div className="text-overlay-p">
         <p className="start">P. SENAKA</p>
       </div>
-
-      <div
-        
-        dangerouslySetInnerHTML={{
-          __html: `
-    <video playsinline loop autoPlay muted autobuffer class="video-background">
+      <video playsInline muted autoBuffer autoPlay loop id="video-background">
         <source src="/antidote.mp4" type="video/mp4" />
       </video>
-</video>            
-`,
-        }}
-      ></div>
 
       <div className="antidote text-overlay">
         <h1>Antidote</h1>
