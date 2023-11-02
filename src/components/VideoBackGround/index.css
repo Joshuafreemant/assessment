@@ -58,6 +58,7 @@
   justify-content: center;
   cursor: pointer;
   transition: transform 0.3s, width 0.1s, height 0.1s;
+  z-index: 1000;
 }
 .arrow-down {
   color: #fff;
