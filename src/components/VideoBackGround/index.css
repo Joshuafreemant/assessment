@@ -18,6 +18,7 @@
   transform: translate(-50%, -50%); /* Center the text container */
   padding: 20px;
   text-align: center;
+  z-index: 1000;
 }
 .text-overlay-p {
   position: absolute;

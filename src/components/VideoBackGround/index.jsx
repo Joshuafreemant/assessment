@@ -21,7 +21,6 @@ const VideoBackground = () => {
       </div>
 
       <div className="red-dot">
-        <SlArrowDown className="arrow-down" />
       </div>
     </div>
   );

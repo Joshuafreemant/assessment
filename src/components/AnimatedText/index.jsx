@@ -33,11 +33,13 @@ const AnimatedText = () => {
       <div className="free-text">
         <img
           data-aos="zoom-in-up"
-          data-aos-duration="3000"
+          data-aos-duration="1000"
           src="/pitline.svg"
           alt=""
         />
-        <p data-aos="zoom-in-down" className="animated-zoom animate-highlight">
+        <p data-aos="zoom-in-down" 
+        data-aos-duration="2000"
+        className="animated-zoom animate-highlight">
           Antidote is a zero-cost consulting agency for grassroots non-profit’s
           & progressive forces.
         </p>
