@@ -1,13 +1,33 @@
-import React from 'react'
-import "./index.css"
+import React, { useEffect, useRef, useState } from "react";
+import "./index.css";
 const TextSlide = () => {
-  return (
-    <div className='text-slide'>
-        <marquee><h1 className='antidote'>
-            HEART ON FIRE, BRAIN ON ICE</h1></marquee>
-        
-    </div>
-  )
-}
 
-export default TextSlide
+  const ref = useRef(null);
+  const [containerWidth, setWidth] = useState(100 + "%");
+  const [animationState, setPlay] = useState("paused");
+  useEffect(() => {
+    if (ref.current) {
+      setWidth(ref.current.scrollWidth + "px");
+      setPlay("running");
+    }
+  }, []);
+
+  return (
+    <div className="text-slide">
+      <div
+        className="d-flex"
+        ref={ref}
+        style={{
+          width: `${containerWidth}`,
+          animationPlayState: animationState,
+        }}
+      >
+        <h1 className="antidote">HEART ON FIRE, BRAIN ON ICE
+        
+        </h1>
+      </div>
+    </div>
+  );
+};
+
+export default TextSlide;

@@ -6,6 +6,10 @@
   padding: 0px 100px 70px 100px;
   font-weight: bold;
 }
+.footer p {
+  letter-spacing: 3px;
+  font-size: 12px;
+}
 .bright {
   color: #000;
 }
@@ -13,6 +17,9 @@
   color: #000;
   opacity: 0.3;
 }
+
+
+
 @media only screen and (max-width: 768px) {
   .footer {
     flex-direction: column;
@@ -22,12 +29,10 @@
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1025px) {
-    .footer {
-        padding: 0px 30px 300px 30px;
-        flex-direction: column;
-        align-items: start;
+  .footer {
+    padding: 0px 30px 300px 30px;
+    flex-direction: column;
+    align-items: start;
     margin-top: -5px;
-
-      }
-   
   }
+}

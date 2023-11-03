@@ -8,7 +8,6 @@ const Footer = () => {
         <p className='bright'>ANTIDOTE &copy; {fullYear}</p>
         <p className='faded'>CASE STUDIES (SOON)</p>
         <p className='bright'>CONTACT</p>
-        
     </div>
   )
 }

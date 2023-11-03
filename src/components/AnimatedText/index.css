@@ -69,12 +69,13 @@ section {
 .faded-btn {
   background-color: #fff3e4;
   border-radius: 40px;
-  padding: 20px 40px;
+  padding: 15px 25px;
   display: flex;
   justify-content: center;
   gap: 12px;
   align-items: center;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 1px 2px #00000029;
+
   cursor: pointer;
 }
 .faded-btn:hover {
@@ -93,7 +94,7 @@ section {
 .faded-text {
   margin: 0;
   font-weight: medium;
-  font-size: 18px;
+  font-size: 15px;
 }
 .free-text {
   display: flex;
@@ -118,13 +119,14 @@ section {
 }
 .services button {
   background: transparent;
-  border: 1px solid #654e2b;
+  border: 1px solid rgba(101, 78, 43, 0.45);
   padding: 18px 50px;
   border-radius: 60px;
   outline: none;
   cursor: pointer;
   color: #030303;
   font-size: 15px;
+  letter-spacing: 3px;
 }
 .line {
   background-color: #a38c69;
