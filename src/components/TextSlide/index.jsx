@@ -1,15 +1,7 @@
-import React, { useEffect, useRef, useState } from "react";
+import React from "react";
 import "./index.css";
 const TextSlide = () => {
-  const ref = useRef(null);
-  const [containerWidth, setWidth] = useState(100 + "%");
-  const [animationState, setPlay] = useState("paused");
-  useEffect(() => {
-    if (ref.current) {
-      setWidth(ref.current.scrollWidth + "px");
-      setPlay("running");
-    }
-  }, []);
+
 
   return (
     <>

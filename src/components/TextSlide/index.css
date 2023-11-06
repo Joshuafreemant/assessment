@@ -43,8 +43,8 @@
 }
 .m-scroll__title > div {
   display: flex;
-  -webkit-animation: scrollText 25s infinite linear;
-          animation: scrollText 25s infinite linear;
+  -webkit-animation: scrollText 12s infinite linear;
+          animation: scrollText 12s infinite linear;
 }
 .m-scroll__title h1 {
   margin: 0;
