@@ -95,6 +95,7 @@
     font-size: 30px;
     text-align: left;
     width: 85%;
+    padding-left: 15px;
   }
   .about .bottom-text {
     font-size: 28px;
@@ -109,10 +110,29 @@
     width: 100%;
     padding: 0px 20px 0px 30px;
   }
-  .avatar P {
+  .avatar p {
     position: relative;
     right: 0;
     top: 0;
+    font-size: 18px;
+  }
+  .avatar img {
+    width: 220px;
+    height: 230px;
+  }
+  .bottom-line{
+    margin-right: 90px;
+  }
+  .second-bottom-line{
+    display: none;
+  }
+  .about-bottom{
+    padding: 0px 5px;
+  }
+  .bottom-btn {
+    padding: 28px 0px;
+    width: 90%;
+ 
   }
 }
 

@@ -3,10 +3,10 @@ import "./index.css";
 import { BsLightningCharge } from "react-icons/bs";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Bounce } from "react-awesome-reveal";
+
 const About = () => {
-  useEffect(() => {
-    AOS.init();
-  }, []);
+ 
 
   return (
     <div className="about">
@@ -16,22 +16,25 @@ const About = () => {
       </div>
       <div className="bottom-line"></div>
 
-      <p  className="bottom-text-about animate-highlight">
-        For over a decade, I’ve worked at the intersection of design,
-        behavioural science and technology. Helping companies like Airbnb,
-        Google, PayPal & Fitbit execute intelligent and elegant products.
-      </p>
-
-      <p  className="bottom-text-about  animate-highlight">
-        Over a period of travel, I’ve experienced the cultures and perspectives
-        of people in over 90 countries. These interactions have deepened my
-        understanding of global injustices and shifted my focus toward projects
-        that tackle today’s most pressing issues.
-      </p>
+      <Bounce>
+        <p className="bottom-text-about animate-highlight">
+          For over a decade, I’ve worked at the intersection of design,
+          behavioural science and technology. Helping companies like Airbnb,
+          Google, PayPal & Fitbit execute intelligent and elegant products.
+        </p>
+      </Bounce>
+      <Bounce>
+        <p className="bottom-text-about  animate-highlight">
+          Over a period of travel, I’ve experienced the cultures and
+          perspectives of people in over 90 countries. These interactions have
+          deepened my understanding of global injustices and shifted my focus
+          toward projects that tackle today’s most pressing issues.
+        </p>
+      </Bounce>
 
       <div className="about-bottom">
-        <div className="bottom-line"></div>
-        <p  className="bottom-text animate-highlight">
+        <div className="bottom-line second-bottom-line"></div>
+        <p className="bottom-text animate-highlight">
           Available for 40 hours a month. One project at a time. Zero Cost.
         </p>
         <div className="bottom-btn">
