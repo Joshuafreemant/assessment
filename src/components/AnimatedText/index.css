@@ -3,12 +3,12 @@
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   color: #726956;
-  font-size: 48px;
+  /* font-size: 460px; */
   text-align: center;
-  margin-top: 40px;
+  margin-top: 90px;
 }
 .animated-text {
-  font-size: 60px;
+  font-size: 58px;
 }
 section {
   display: flex;
@@ -64,12 +64,12 @@ section {
   background-color: #d3c2a1;
 }
 .heading {
-  font-size: 55px;
+  font-size: 40px;
 }
 .faded-btn {
   background-color: #fff3e4;
   border-radius: 40px;
-  padding: 13px 25px;
+  padding: 17px 32px;
   display: flex;
   justify-content: center;
   gap: 12px;
@@ -94,7 +94,7 @@ section {
 .faded-text {
   margin: 0;
   font-weight: medium;
-  font-size: 15px;
+  font-size: 18px;
 }
 .free-text {
   display: flex;

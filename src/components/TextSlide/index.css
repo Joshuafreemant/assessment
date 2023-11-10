@@ -48,13 +48,13 @@
 }
 .m-scroll__title h1 {
   margin: 0;
-  font-size: 140px;
+  font-size: 100px;
   color: #fce9b3;
   transition: all 2s ease;
 }
 .m-scroll__title a {
   text-decoration: none;
-  color: white;
+  color: #fce9b3;
 }
 
 
