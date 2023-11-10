@@ -10,18 +10,21 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.1",
     "antd": "^5.8.2",
     "aos": "^3.0.0-beta.6",
     "framer-motion": "^10.16.4",
     "moment": "^2.29.4",
     "react": "^18.2.0",
     "react-apexcharts": "^1.4.1",
+    "react-awesome-reveal": "^4.2.6",
     "react-beautiful-dnd": "^13.1.1",
     "react-dom": "^18.2.0",
     "react-icons": "^4.11.0",
     "react-router-dom": "^6.14.2",
     "react-select": "^5.7.7",
-    "recharts": "^2.7.3"
+    "recharts": "^2.7.3",
+    "yarn": "^1.22.19"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",

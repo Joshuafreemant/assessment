@@ -30,13 +30,7 @@
   z-index: 1000;
 }
 
-.text-overlay h1 {
-  font-size: 180px;
-  color: #fdf3d6; /* Text color */
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  font-weight: 300;
-}
+
 .text-overlay-p p {
   font-size: 22px;
   color: #fff; /* Text color */
@@ -45,7 +39,7 @@
 }
 .dropdown-overlay {
   position: absolute;
-  bottom: 10%;
+  bottom: 6%;
   left: 50%;
   transform: translate(-50%, -50%); /* Center the text container */
   padding: 20px;
@@ -80,22 +74,30 @@
   height: 15px;
   z-index: 1000;
 }
+.mobile{
+  display: none;
+}
+.tab{
+  display: none;
+}
 @media only screen and (max-width: 768px) {
-  /* Add your tablet-specific styles here */
-  .text-overlay h1 {
-    font-size: 85px;
-    transform: rotate(-90deg);
+ 
+  .mobile{
+    display: flex;
+  }
+  .desktop, .tab{
+    display: none;
   }
   .text-overlay-p {
     top: 12%;
    
   }
   .text-overlay-p p {
-    font-size: 20px;
+    font-size: 15px;
     margin-top: -10px;
   }
   .dropdown-overlay {
-    bottom: 4%;
+    bottom: 2%;
   }
   .red-dot {
     top: 4%;
@@ -104,10 +106,12 @@
 }
 @media only screen and (min-width: 768px) and (max-width: 1025px) {
   /* Add your tablet-specific styles here */
-  .text-overlay h1 {
-    font-size: 145px;
-    transform: rotate(-90deg);
-
+ 
+  .tab{
+    display: flex;
+  }
+  .desktop, .mobile{
+    display: none;
   }
   .text-overlay-p p {
     font-size: 28px;

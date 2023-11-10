@@ -1,6 +1,6 @@
 import React from "react";
 import "./index.css";
-import { DropDown } from "../../assets/Icons";
+import { LogoSvg, MobileLogoSvg, TabLogoSvg } from "../../assets/Icons";
 import { SlArrowDown } from "react-icons/sl";
 
 const VideoBackground = () => {
@@ -13,8 +13,15 @@ const VideoBackground = () => {
         <source src="/antidote.mp4" type="video/mp4" />
       </video>
 
-      <div className="antidote text-overlay">
-        <h1>Antidote</h1>
+      <div className="desktop text-overlay">
+        <LogoSvg/>
+      </div>
+      <div className="mobile text-overlay">
+        <MobileLogoSvg/>
+      </div>
+
+      <div className="tab text-overlay">
+        <TabLogoSvg />
       </div>
 
       <div className="dropdown-overlay">

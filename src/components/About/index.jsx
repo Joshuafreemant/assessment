@@ -16,13 +16,13 @@ const About = () => {
       </div>
       <div className="bottom-line"></div>
 
-      <p data-aos="fade-down" className="bottom-text-about animate-highlight">
+      <p  className="bottom-text-about animate-highlight">
         For over a decade, I’ve worked at the intersection of design,
         behavioural science and technology. Helping companies like Airbnb,
         Google, PayPal & Fitbit execute intelligent and elegant products.
       </p>
 
-      <p data-aos="fade-down" className="bottom-text-about  animate-highlight">
+      <p  className="bottom-text-about  animate-highlight">
         Over a period of travel, I’ve experienced the cultures and perspectives
         of people in over 90 countries. These interactions have deepened my
         understanding of global injustices and shifted my focus toward projects
@@ -31,7 +31,7 @@ const About = () => {
 
       <div className="about-bottom">
         <div className="bottom-line"></div>
-        <p data-aos="fade-down" className="bottom-text animate-highlight">
+        <p  className="bottom-text animate-highlight">
           Available for 40 hours a month. One project at a time. Zero Cost.
         </p>
         <div className="bottom-btn">

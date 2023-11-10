@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./index.css";
 import { ScrollText } from "./ScrollText";
 import { BsLightningCharge } from "react-icons/bs";
+import { Fade } from "react-awesome-reveal";
 import AOS from "aos";
 import "aos/dist/aos.css";
 const AnimatedText = () => {
@@ -57,16 +58,18 @@ const AnimatedText = () => {
           <label htmlFor="" className="pressura title-label">
             STRATEGY
           </label>
-          <p data-aos="fade-up" className="animate-highlight">
+          <Fade cascade damping={0.1}>
+          <p  className="animate-highlight">
             Analyze needs and prioritize resources to establish a strong
             foundation for clear and focused progress.
           </p>
+          </Fade>
         </div>
         <div className="title-text">
           <label htmlFor="" className="pressura title-label">
             MESSAGING
           </label>
-          <p data-aos="fade-up" className="animate-highlight">
+          <p data-aos="fade-zoom-in" className="animate-highlight">
             Distil messages in a ways that stick. Content that resonates beyond
             like-minded circles.
           </p>
@@ -76,7 +79,7 @@ const AnimatedText = () => {
           <label htmlFor="" className="pressura title-label">
             DESIGN
           </label>
-          <p data-aos="fade-up" className="animate-highlight">
+          <p data-aos="fade-zoom-in" className="animate-highlight">
             Confidence inspiring design. Flows and experiences that propel
             people to action.
           </p>
@@ -86,7 +89,7 @@ const AnimatedText = () => {
           <label htmlFor="" className="pressura title-label">
             IDEATION
           </label>
-          <p data-aos="fade-up" className="animate-highlight">
+          <p data-aos="fade-zoom-in" className="animate-highlight">
             Navigate roadblocks with brainstorming, idea building and iteration.
           </p>
         </div>
