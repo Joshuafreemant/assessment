@@ -1,4 +1,3 @@
-
 * {
   box-sizing: border-box;
 }
@@ -19,6 +18,7 @@
   font-family: 'Gerova';
   src:  url('/public/Gerova.woff') format('woff'); 
 }
+
 body,
 #root {
   margin: 0;
@@ -28,20 +28,24 @@ body,
   width: 100%;
   overflow-x: hidden;
 }
-.antidote{
-  font-family: "Gerova";
+
+.antidote {
+  font-family: "Gerova", sans-serif;
   font-weight: 100;
 }
 
-.start{
-  font-family: "Rosindale" !important;
+.start {
+  font-family: "Rosindale", sans-serif !important;
 }
 
-.animate-highlight{
-  font-family: "Rosindale Light" !important;
-  
+.animate-highlight {
+  font-family: "Rosindale Light", sans-serif !important;
 }
-.pressura{
-  font-family: "GT Pressura Mono Light";
-  
+
+.pressura {
+  font-family: "GT Pressura Mono Light", sans-serif;
+}
+.animated-text{
+  font-family: "Rosindale Light", sans-serif !important;
+
 }
