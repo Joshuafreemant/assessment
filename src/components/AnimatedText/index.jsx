@@ -247,7 +247,6 @@ const AnimatedText = () => {
     };
   }, [designTextVisible]);
 
-
   useEffect(() => {
     const handleScroll = () => {
       if (ideationRef.current && !ideationVisible) {

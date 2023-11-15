@@ -19,6 +19,7 @@ const TextSlide = () => {
               <a className="antidote">BRAIN ON ICE</a> {" "}
               
             </h1>
+
           </div>
         </div>
       </div>
