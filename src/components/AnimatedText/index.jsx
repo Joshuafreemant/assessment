@@ -319,7 +319,7 @@ const AnimatedText = () => {
         /> */}
         <p
           ref={sectionRef}
-          className={`animated-text ${isVisible ? "animated-fade-down" : ""}`}
+          className={`animated-text animated-texts  ${isVisible ? "animated-fade-down" : ""}`}
         >
           Antidote is a zero-cost consulting agency for grassroots non-profit’s
           & progressive forces.

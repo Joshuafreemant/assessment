@@ -35,7 +35,7 @@ export const ScrollText = ({ content }) => {
   return (
     <div className="outer">
       <div className="inner">
-        <p className="animated-text">
+        <p className="animated-text animated-text-scroll">
           {content.map((item) => (
             <ContentLine key={item} content={item} />
           ))}

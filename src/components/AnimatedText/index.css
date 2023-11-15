@@ -103,8 +103,11 @@ section {
   text-align: center;
   width: 530px;
 }
-.animated-text {
-  font-size: 60px;
+.animated-text-scroll {
+  font-size: 55px;
+}
+.animated-texts {
+  font-size: 65px;
 }
 .animated-zoom {
   font-size: 70px;
