@@ -10,7 +10,7 @@ const About = () => {
     AOS.init({
       // Global settings
       duration: 1000, // Animation duration
-      offset: 100, // Offset (in pixels) from the top of the page
+     
 
       // Customize per element settings
       once: true, // Only animate an element once

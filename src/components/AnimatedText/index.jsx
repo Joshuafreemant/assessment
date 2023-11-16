@@ -80,7 +80,7 @@ const AnimatedText = () => {
           className="title-text"
           data-aos="fade-down"
           data-aos-delay="200"
-          data-aos-offset="200"
+          
         >
           <label htmlFor="" className="pressura title-label">
             STRATEGY
@@ -94,7 +94,7 @@ const AnimatedText = () => {
           className="title-text"
           data-aos="fade-down"
           data-aos-delay="200"
-          data-aos-offset="200"
+          
         >
           <label htmlFor="" className="pressura title-label">
             MESSAGING
@@ -109,7 +109,7 @@ const AnimatedText = () => {
           className="title-text"
           data-aos="fade-down"
           data-aos-delay="200"
-          data-aos-offset="200"
+          
         >
           <label htmlFor="" className="pressura title-label">
             DESIGN
@@ -124,7 +124,7 @@ const AnimatedText = () => {
           className="title-text"
           data-aos="fade-down"
           data-aos-delay="200"
-          data-aos-offset="200"
+          
         >
           <label htmlFor="" className="pressura title-label">
             IDEATION
