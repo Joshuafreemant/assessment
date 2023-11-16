@@ -169,15 +169,15 @@ section {
 }
 .animated-fade-down {
   opacity: 0.2;
-  animation: fadeDownAnimation 1.5s ease-in-out forwards;
+  animation: fadeDownAnimation 1.1s ease-in-out forwards;
 }
 .animated-fade-down-short {
   opacity: 0.2;
-  animation: fadeDownAnimation 1.3s ease-in-out forwards;
+  animation: fadeDownAnimation .5s ease-in-out forwards;
 }
 .animated-fade-down-texts {
   opacity: 0.2;
-  animation: fadeDownAnimationTexts 1.6s ease-in-out forwards;
+  animation: fadeDownAnimationTexts 1.2s ease-in-out forwards;
 }
 
 

@@ -19,285 +19,28 @@ const AnimatedText = () => {
     "kindness is truly revolutionary.",
   ];
 
-  const [isVisible, setIsVisible] = useState(false);
-  const [btnVisible, setBtnVisible] = useState(false);
-  const [strategyVisible, setStrategyVisible] = useState(false);
-  const [strategyTextVisible, setStrategyTextVisible] = useState(false);
-  const [messageVisible, setMessageVisible] = useState(false);
-  const [messageTextVisible, setMessageTextVisible] = useState(false);
-  const [designVisible, setDesignVisible] = useState(false);
-  const [designTextVisible, setDesignTextVisible] = useState(false);
-  const [ideationVisible, setIdeationVisible] = useState(false);
-  const [ideationTextVisible, setIdeationTextVisible] = useState(false);
-  const sectionRef = useRef(null);
-  const btnRef = useRef(null);
-  const strategyRef = useRef(null);
-  const strategyTextRef = useRef(null);
-  const messageRef = useRef(null);
-  const messageTextRef = useRef(null);
-  const designRef = useRef(null);
-  const designTextRef = useRef(null);
-  const ideationRef = useRef(null);
-  const ideationTextRef = useRef(null);
   useEffect(() => {
-    const handleScroll = () => {
-      if (sectionRef.current && !isVisible) {
-        const top = sectionRef.current.getBoundingClientRect().top;
-        const windowHeight = window.innerHeight;
+    // Initialize AOS
+    AOS.init({
+      // Global settings
+      // duration: 1000, // Animation duration
+      // offset: 100, // Offset (in pixels) from the top of the page
 
-        // Adjust the threshold as needed
-        const threshold = 0.7;
+      // Customize per element settings
+      once: true, // Only animate an element once
+      mirror: false, // Disable animation mirroring on scroll up
 
-        if (top < windowHeight * threshold) {
-          setIsVisible(true);
+      // You can add more options based on your needs
+    });
 
-          // Remove the event listener once the animation is triggered
-          window.removeEventListener("scroll", handleScroll);
-        }
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    // Clean up the event listener when the component unmounts
+    // Refresh AOS after content changes (e.g., dynamic content updates)
+    AOS.refresh();
+    // Clean up on component unmount
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      AOS.refreshHard(); // Hard refresh to remove all AOS data
     };
-  }, [isVisible]);
+  }, []);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (btnRef.current && !btnVisible) {
-        const top = btnRef.current.getBoundingClientRect().top;
-        const windowHeight = window.innerHeight;
-
-        // Adjust the threshold as needed
-        const threshold = 0.7;
-
-        if (top < windowHeight * threshold) {
-          setBtnVisible(true);
-
-          // Remove the event listener once the animation is triggered
-          window.removeEventListener("scroll", handleScroll);
-        }
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    // Clean up the event listener when the component unmounts
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [btnVisible]);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (strategyRef.current && !strategyVisible) {
-        const top = strategyRef.current.getBoundingClientRect().top;
-        const windowHeight = window.innerHeight;
-
-        // Adjust the threshold as needed
-        const threshold = 0.7;
-
-        if (top < windowHeight * threshold) {
-          setStrategyVisible(true);
-
-          // Remove the event listener once the animation is triggered
-          window.removeEventListener("scroll", handleScroll);
-        }
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    // Clean up the event listener when the component unmounts
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [strategyVisible]);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (strategyTextRef.current && !strategyTextVisible) {
-        const top = strategyTextRef.current.getBoundingClientRect().top;
-        const windowHeight = window.innerHeight;
-
-        // Adjust the threshold as needed
-        const threshold = 0.7;
-
-        if (top < windowHeight * threshold) {
-          setStrategyTextVisible(true);
-
-          // Remove the event listener once the animation is triggered
-          window.removeEventListener("scroll", handleScroll);
-        }
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    // Clean up the event listener when the component unmounts
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [strategyTextVisible]);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (messageRef.current && !messageVisible) {
-        const top = messageRef.current.getBoundingClientRect().top;
-        const windowHeight = window.innerHeight;
-
-        // Adjust the threshold as needed
-        const threshold = 0.7;
-
-        if (top < windowHeight * threshold) {
-          setMessageVisible(true);
-
-          // Remove the event listener once the animation is triggered
-          window.removeEventListener("scroll", handleScroll);
-        }
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    // Clean up the event listener when the component unmounts
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [messageVisible]);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (messageTextRef.current && !messageTextVisible) {
-        const top = messageTextRef.current.getBoundingClientRect().top;
-        const windowHeight = window.innerHeight;
-
-        // Adjust the threshold as needed
-        const threshold = 0.7;
-
-        if (top < windowHeight * threshold) {
-          setMessageTextVisible(true);
-
-          // Remove the event listener once the animation is triggered
-          window.removeEventListener("scroll", handleScroll);
-        }
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    // Clean up the event listener when the component unmounts
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [messageTextVisible]);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (designRef.current && !designVisible) {
-        const top = designRef.current.getBoundingClientRect().top;
-        const windowHeight = window.innerHeight;
-
-        // Adjust the threshold as needed
-        const threshold = 0.7;
-
-        if (top < windowHeight * threshold) {
-          setDesignVisible(true);
-
-          // Remove the event listener once the animation is triggered
-          window.removeEventListener("scroll", handleScroll);
-        }
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    // Clean up the event listener when the component unmounts
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [designVisible]);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (designTextRef.current && !designTextVisible) {
-        const top = designTextRef.current.getBoundingClientRect().top;
-        const windowHeight = window.innerHeight;
-
-        // Adjust the threshold as needed
-        const threshold = 0.7;
-
-        if (top < windowHeight * threshold) {
-          setDesignTextVisible(true);
-
-          // Remove the event listener once the animation is triggered
-          window.removeEventListener("scroll", handleScroll);
-        }
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    // Clean up the event listener when the component unmounts
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [designTextVisible]);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (ideationRef.current && !ideationVisible) {
-        const top = ideationRef.current.getBoundingClientRect().top;
-        const windowHeight = window.innerHeight;
-
-        // Adjust the threshold as needed
-        const threshold = 0.7;
-
-        if (top < windowHeight * threshold) {
-          setIdeationVisible(true);
-
-          // Remove the event listener once the animation is triggered
-          window.removeEventListener("scroll", handleScroll);
-        }
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    // Clean up the event listener when the component unmounts
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [ideationVisible]);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (ideationTextRef.current && !ideationTextVisible) {
-        const top = ideationTextRef.current.getBoundingClientRect().top;
-        const windowHeight = window.innerHeight;
-
-        // Adjust the threshold as needed
-        const threshold = 0.7;
-
-        if (top < windowHeight * threshold) {
-          setIdeationTextVisible(true);
-
-          // Remove the event listener once the animation is triggered
-          window.removeEventListener("scroll", handleScroll);
-        }
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    // Clean up the event listener when the component unmounts
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [ideationTextVisible]);
   return (
     <div className="animated-bg">
       <div className="top-info">
@@ -317,20 +60,14 @@ const AnimatedText = () => {
           src="/pitline.svg"
           alt=""
         /> */}
-        <p
-          ref={sectionRef}
-          className={`animated-text animated-texts  ${isVisible ? "animated-fade-down" : ""}`}
-        >
+        <p className="animated-text animated-texts" data-aos="fade-down">
           Antidote is a zero-cost consulting agency for grassroots non-profit’s
           & progressive forces.
         </p>
       </div>
 
       <div className="services">
-        <button
-          ref={btnRef}
-          className={`start ${btnVisible ? "animated-fade-down-short" : ""}`}
-        >
+        <button data-aos="fade-down" className="start">
           CORE SERVICES
         </button>
         <div className="mobile">
@@ -339,84 +76,60 @@ const AnimatedText = () => {
         </div>
         <div className="line"></div>
 
-        <div className="title-text">
-          <label
-            htmlFor=""
-            ref={strategyRef}
-            className={`pressura title-label ${
-              strategyVisible ? "animated-fade-down-short" : ""
-            }`}
-          >
+        <div
+          className="title-text"
+          data-aos="fade-down"
+          data-aos-delay="200"
+          data-aos-offset="200"
+        >
+          <label htmlFor="" className="pressura title-label">
             STRATEGY
           </label>
-          <p
-            ref={strategyTextRef}
-            className={`animate-highlight ${
-              strategyTextVisible ? "animated-fade-down-texts" : ""
-            }`}
-          >
+          <p className="animate-highlight m-0">
             Analyze needs and prioritize resources to establish a strong
             foundation for clear and focused progress.
           </p>
         </div>
-        <div className="title-text">
-          <label
-            htmlFor=""
-            ref={messageRef}
-            className={`pressura title-label ${
-              messageVisible ? "animated-fade-down-short" : ""
-            }`}
-          >
+        <div
+          className="title-text"
+          data-aos="fade-down"
+          data-aos-delay="200"
+          data-aos-offset="200"
+        >
+          <label htmlFor="" className="pressura title-label">
             MESSAGING
           </label>
-          <p
-            ref={messageTextRef}
-            className={`animate-highlight ${
-              messageTextVisible ? "animated-fade-down-texts" : ""
-            }`}
-          >
+          <p className="animate-highlight">
             Distil messages in a ways that stick. Content that resonates beyond
             like-minded circles.
           </p>
         </div>
 
-        <div className="title-text">
-          <label
-            htmlFor=""
-            ref={designRef}
-            className={`pressura title-label ${
-              designVisible ? "animated-fade-down-short" : ""
-            }`}
-          >
+        <div
+          className="title-text"
+          data-aos="fade-down"
+          data-aos-delay="200"
+          data-aos-offset="200"
+        >
+          <label htmlFor="" className="pressura title-label">
             DESIGN
           </label>
-          <p
-            ref={designTextRef}
-            className={`animate-highlight ${
-              designTextVisible ? "animated-fade-down-texts" : ""
-            }`}
-          >
+          <p className="animate-highlight">
             Confidence inspiring design. Flows and experiences that propel
             people to action.
           </p>
         </div>
 
-        <div className="title-text">
-          <label
-            htmlFor=""
-            ref={ideationRef}
-            className={`pressura title-label ${
-              ideationVisible ? "animated-fade-down-short" : ""
-            }`}
-          >
+        <div
+          className="title-text"
+          data-aos="fade-down"
+          data-aos-delay="200"
+          data-aos-offset="200"
+        >
+          <label htmlFor="" className="pressura title-label">
             IDEATION
           </label>
-          <p
-            ref={ideationTextRef}
-            className={`animate-highlight ${
-              ideationTextVisible ? "animated-fade-down-texts" : ""
-            }`}
-          >
+          <p className="animate-highlight">
             Navigate roadblocks with brainstorming, idea building and iteration.
           </p>
         </div>
