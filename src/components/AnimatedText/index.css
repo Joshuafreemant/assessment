@@ -59,7 +59,7 @@ section {
 }
 .animated-bg {
   padding: 40px 120px;
-  background-color: #d3c2a1;
+  background-color: #BAB4AD;
 }
 .heading {
   font-size: 40px;
@@ -101,13 +101,13 @@ section {
   position: relative;
   margin: 150px auto;
   text-align: center;
-  width: 530px;
+  width: 520px;
 }
 .animated-text-scroll {
   font-size: 55px;
 }
 .animated-texts {
-  font-size: 65px;
+  font-size: 70px;
 }
 .animated-zoom {
   font-size: 70px;
@@ -125,14 +125,14 @@ section {
 }
 .services button {
   background: transparent;
-  border: 1px solid rgba(101, 78, 43, 0.45);
+  /* border: 1px solid rgba(101, 78, 43, 0.45);
   padding: 18px 50px;
-  border-radius: 60px;
-  /* border: none; */
+  border-radius: 60px; */
+  border: none;
   outline: none;
   cursor: pointer;
   color: #030303;
-  font-size: 15px;
+  font-size: 12px;
   letter-spacing: 3px;
   
 }
@@ -163,6 +163,7 @@ section {
   letter-spacing: 4px;
   color: #7e3100;
   font-weight: medium;
+  font-size: 18px;
 }
 .desktop {
   display: flex;

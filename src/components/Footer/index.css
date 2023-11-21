@@ -1,5 +1,5 @@
 .footer {
-  background-color: #a4a88c;
+  background-color: #AFA9A1;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -8,9 +8,17 @@
 }
 .footer p {
   letter-spacing: 3px;
-  font-size: 12px;
+  font-size: 16px;
 }
 .bright {
+  color: #000;
+
+}
+.bright :hover{
+  color: #fff;
+}
+.bright a{
+  text-decoration: none;
   color: #000;
 }
 .faded {

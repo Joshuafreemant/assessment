@@ -2,14 +2,110 @@ import React, { useEffect, useRef, useState } from "react";
 import "./index.css";
 import { ScrollText } from "./ScrollText";
 import { BsLightningCharge } from "react-icons/bs";
-import { Bounce } from "react-awesome-reveal";
-import AOS from "aos";
-import "aos/dist/aos.css";
-const AnimatedText = () => {
-  useEffect(() => {
-    AOS.init();
-  }, []);
 
+import { useAnimation, motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+
+const AnimatedText = () => {
+  const controls = useAnimation();
+  const strategyControls = useAnimation();
+  const lineControls = useAnimation();
+  const btnControls = useAnimation();
+  const messageControls = useAnimation();
+  const designControls = useAnimation();
+  const ideationControls = useAnimation();
+  const [ref, inView] = useInView();
+  const [strategyref, inStrategyView] = useInView();
+  const [lineref, inLineView] = useInView();
+  const [btnref, inBtnView] = useInView();
+  const [messageref, inMessageView] = useInView();
+  const [designref, inDesignView] = useInView();
+  const [ideationref, inIdeationView] = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      setTimeout(() => {
+        controls.start("visible");
+      }, 500);
+    }
+  }, [controls, inView]);
+
+  useEffect(() => {
+    if (inLineView) {
+      setTimeout(() => {
+        lineControls.start("visible");
+      }, 300);
+    }
+  }, [lineControls, inLineView]);
+
+  useEffect(() => {
+    if (inBtnView) {
+      btnControls.start("visible");
+    }
+  }, [btnControls, inBtnView]);
+
+  useEffect(() => {
+    if (inStrategyView) {
+      setTimeout(() => {
+        strategyControls.start("visible");
+      }, 400);
+    }
+  }, [strategyControls, inStrategyView]);
+
+  useEffect(() => {
+    if (inMessageView) {
+      setTimeout(() => {
+        messageControls.start("visible");
+      }, 700);
+    }
+  }, [messageControls, inMessageView]);
+  useEffect(() => {
+    if (inDesignView) {
+      setTimeout(() => {
+        designControls.start("visible");
+      }, 500);
+    }
+  }, [designControls, inDesignView]);
+  useEffect(() => {
+    if (inIdeationView) {
+      setTimeout(() => {
+        ideationControls.start("visible");
+      }, 800);
+    }
+  }, [ideationControls, inIdeationView]);
+
+  const antidoteVariant = {
+    visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 1 } },
+    hidden: { opacity: 0, y: -80, scale: 1 },
+  };
+
+  const btnVariants = {
+    visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 1 } },
+    hidden: { opacity: 0, y: -80, scale: 1 },
+  };
+  const lineVariants = {
+    visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 1 } },
+    hidden: { opacity: 0, y: -80, scale: 1 },
+  };
+  const strategyVariants = {
+    visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 1 } },
+    hidden: { opacity: 0, y: -65, scale: 1 },
+  };
+
+  const messageVariants = {
+    visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 1 } },
+    hidden: { opacity: 0, y: -65, scale: 1 },
+  };
+
+  const designVariants = {
+    visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 1 } },
+    hidden: { opacity: 0, y: -65, scale: 1 },
+  };
+
+  const ideationVariants = {
+    visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 1 } },
+    hidden: { opacity: 0, y: -65, scale: 1 },
+  };
   const content = [
     "Compassion is the antidote to the hyper-",
     "individualism of our capitalist world. In a",
@@ -18,28 +114,6 @@ const AnimatedText = () => {
     "that building power through community and",
     "kindness is truly revolutionary.",
   ];
-
-  useEffect(() => {
-    // Initialize AOS
-    AOS.init({
-      // Global settings
-      // duration: 1000, // Animation duration
-      // offset: 100, // Offset (in pixels) from the top of the page
-
-      // Customize per element settings
-      once: true, // Only animate an element once
-      mirror: false, // Disable animation mirroring on scroll up
-
-      // You can add more options based on your needs
-    });
-
-    // Refresh AOS after content changes (e.g., dynamic content updates)
-    AOS.refresh();
-    // Clean up on component unmount
-    return () => {
-      AOS.refreshHard(); // Hard refresh to remove all AOS data
-    };
-  }, []);
 
   return (
     <div className="animated-bg">
@@ -53,86 +127,120 @@ const AnimatedText = () => {
       <div className="animated">
         <ScrollText content={content} />
       </div>
-      <div className="free-text">
+      <div className="free-text ">
         {/* <img
           data-aos="zoom-in-up"
           data-aos-duration="1000"
           src="/pitline.svg"
           alt=""
         /> */}
-        <p className="animated-text animated-texts" data-aos="fade-down">
-          Antidote is a zero-cost consulting agency for grassroots non-profit’s
-          & progressive forces.
-        </p>
+        <motion.div
+          ref={ref}
+          animate={controls}
+          initial="hidden"
+          variants={antidoteVariant}
+        >
+          <p className="animated-text animated-texts">
+            Antidote is a zero-cost consulting agency for grassroots
+            non-profit’s & progressive forces.
+          </p>
+        </motion.div>
       </div>
 
       <div className="services">
-        <button data-aos="fade-down" className="start">
-          CORE SERVICES
-        </button>
+        <motion.div
+          ref={btnref}
+          animate={btnControls}
+          initial="hidden"
+          variants={btnVariants}
+        >
+          <button
+            // data-aos="fade-down"
+            className="start"
+          >
+            CORE SERVICES
+          </button>
+        </motion.div>
         <div className="mobile">
           <p>CORE</p>
           <p>SERVICES</p>
         </div>
-        <div className="line"></div>
+        <motion.div
+          ref={lineref}
+          animate={lineControls}
+          initial="hidden"
+          variants={lineVariants}
+        >
+          <div className="line"></div>
+        </motion.div>
 
-        <div
-          className="title-text"
-          data-aos="fade-down"
-          data-aos-delay="200"
-          
+        <motion.div
+          ref={strategyref}
+          animate={strategyControls}
+          initial="hidden"
+          variants={strategyVariants}
         >
-          <label htmlFor="" className="pressura title-label">
-            STRATEGY
-          </label>
-          <p className="animate-highlight m-0">
-            Analyze needs and prioritize resources to establish a strong
-            foundation for clear and focused progress.
-          </p>
-        </div>
-        <div
-          className="title-text"
-          data-aos="fade-down"
-          data-aos-delay="200"
-          
-        >
-          <label htmlFor="" className="pressura title-label">
-            MESSAGING
-          </label>
-          <p className="animate-highlight">
-            Distil messages in a ways that stick. Content that resonates beyond
-            like-minded circles.
-          </p>
-        </div>
+          <div className="title-text">
+            <label htmlFor="" className="pressura title-label">
+              STRATEGY
+            </label>
+            <p className="animate-highlight m-0">
+              Analyze needs and prioritize resources to establish a strong
+              foundation for clear and focused progress.
+            </p>
+          </div>
+        </motion.div>
 
-        <div
-          className="title-text"
-          data-aos="fade-down"
-          data-aos-delay="200"
-          
+        <motion.div
+          ref={messageref}
+          animate={messageControls}
+          initial="hidden"
+          variants={messageVariants}
         >
-          <label htmlFor="" className="pressura title-label">
-            DESIGN
-          </label>
-          <p className="animate-highlight">
-            Confidence inspiring design. Flows and experiences that propel
-            people to action.
-          </p>
-        </div>
+          <div className="title-text">
+            <label htmlFor="" className="pressura title-label">
+              MESSAGING
+            </label>
+            <p className="animate-highlight">
+              Distil messages in a ways that stick. Content that resonates
+              beyond like-minded circles.
+            </p>
+          </div>
+        </motion.div>
 
-        <div
-          className="title-text"
-          data-aos="fade-down"
-          data-aos-delay="200"
-          
+        <motion.div
+          ref={designref}
+          animate={designControls}
+          initial="hidden"
+          variants={designVariants}
         >
-          <label htmlFor="" className="pressura title-label">
-            IDEATION
-          </label>
-          <p className="animate-highlight">
-            Navigate roadblocks with brainstorming, idea building and iteration.
-          </p>
-        </div>
+          <div className="title-text">
+            <label htmlFor="" className="pressura title-label">
+              DESIGN
+            </label>
+            <p className="animate-highlight">
+              Confidence inspiring design. Flows and experiences that propel
+              people to action.
+            </p>
+          </div>
+        </motion.div>
+
+        <motion.div
+          ref={ideationref}
+          animate={ideationControls}
+          initial="hidden"
+          variants={ideationVariants}
+        >
+          <div className="title-text">
+            <label htmlFor="" className="pressura title-label">
+              IDEATION
+            </label>
+            <p className="animate-highlight">
+              Navigate roadblocks with brainstorming, idea building and
+              iteration.
+            </p>
+          </div>
+        </motion.div>
       </div>
     </div>
   );

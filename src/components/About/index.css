@@ -1,10 +1,10 @@
 .about {
-  background-color: #b6baa0;
+  background-color:  #AFA9A1;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 130px 230px;
+  padding: 130px 0px;
 }
 .avatar {
   position: relative;
@@ -20,14 +20,15 @@
   font-size: 25px;
 }
 .avatar img {
-  width: 300px;
-  height: 320px;
+  width: 265px;
+  height: 280px;
 }
 .about .bottom-text-about {
   font-size: 55px;
   text-align: center;
   margin-top: 30px;
   line-height: 1.3;
+  width: 800px;
 }
 .bottom-line {
   width: 0.1px;
@@ -128,11 +129,14 @@
     text-align: left;
     /* width: 85%; */
     padding-left: 15px;
+  width: 90%;
+
   }
   .about .bottom-text {
-    font-size: 28px;
+    font-size: 30px;
     text-align: center;
-    width: 85%;
+    width: 100%;
+    padding: 0px 25px;
   }
   .avatar {
     /* margin-right: 50px; */
@@ -143,13 +147,13 @@
     padding: 0px 20px 0px 30px;
   }
   .avatar p {
-    position: relative;
-    right: 0;
-    top: 0;
+    position: absolute;
+    right: 20px;
+    top: 80px;
     font-size: 18px;
   }
   .avatar img {
-    width: 220px;
+    width: 205px;
     height: 220px;
   }
   .bottom-line{
@@ -162,8 +166,12 @@
     padding: 0px 5px;
   }
   .bottom-btn {
-    padding: 28px 0px;
-    width: 80%;
+    padding: 22px 0px;
+    width: 310px;
+ 
+  }
+  .bottom-btn-text {
+   font-size: 22px;
  
   }
 }
