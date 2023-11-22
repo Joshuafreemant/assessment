@@ -39,7 +39,7 @@
 }
 .dropdown-overlay {
   position: absolute;
-  bottom: 6%;
+  bottom: 10%;
   left: 50%;
   transform: translate(-50%, -50%); /* Center the text container */
   padding: 20px;

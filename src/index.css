@@ -49,3 +49,7 @@ body,
   font-family: "Rosindale Light", sans-serif !important;
 
 }
+.rotate-90 {
+  transform: rotate(-90deg) !important;
+  width: 350px !important;
+}

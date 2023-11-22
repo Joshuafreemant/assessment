@@ -6,8 +6,11 @@
   /* font-size: 460px; */
   text-align: center;
   margin-top: 90px;
-}
 
+}
+.animated-mobile{
+  display: none;
+}
 section {
   display: flex;
   justify-content: center;
@@ -132,7 +135,7 @@ section {
   outline: none;
   cursor: pointer;
   color: #030303;
-  font-size: 12px;
+  font-size: 15px;
   letter-spacing: 3px;
   
 }
@@ -209,6 +212,20 @@ section {
   .animated-bg {
     padding: 20px 30px;
   }
+  .animated{
+    display: none;
+  }
+  .animated-mobile {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: #726956;
+    /* font-size: 460px; */
+    text-align: center;
+    margin-top: 90px;
+    display: block;
+  }
+  
   .heading {
     font-size: 20px;
     letter-spacing: 2px;
@@ -221,14 +238,17 @@ section {
   .desktop {
     display: none;
   }
-  .animated {
+  .animated-mobile {
     font-size: 30px;
     text-align: left;
-    width: 90%;
+    width: 95%;
   }
   .animated-text {
-    font-size: 45px;
+    font-size: 32px;
     text-align: left;
+  }
+  .animated-texts {
+    font-size: 38px !important;
   }
   .highlighted-text {
     top: 0.5px;

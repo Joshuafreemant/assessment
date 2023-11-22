@@ -34,13 +34,15 @@ const AnimatedText = () => {
     if (inLineView) {
       setTimeout(() => {
         lineControls.start("visible");
-      }, 300);
+      }, 900);
     }
   }, [lineControls, inLineView]);
 
   useEffect(() => {
     if (inBtnView) {
-      btnControls.start("visible");
+      setTimeout(() => {
+        btnControls.start("visible");
+      }, 500);
     }
   }, [btnControls, inBtnView]);
 
@@ -48,7 +50,7 @@ const AnimatedText = () => {
     if (inStrategyView) {
       setTimeout(() => {
         strategyControls.start("visible");
-      }, 400);
+      }, 1400);
     }
   }, [strategyControls, inStrategyView]);
 
@@ -56,32 +58,32 @@ const AnimatedText = () => {
     if (inMessageView) {
       setTimeout(() => {
         messageControls.start("visible");
-      }, 700);
+      }, 1700);
     }
   }, [messageControls, inMessageView]);
   useEffect(() => {
     if (inDesignView) {
       setTimeout(() => {
         designControls.start("visible");
-      }, 500);
+      }, 1400);
     }
   }, [designControls, inDesignView]);
   useEffect(() => {
     if (inIdeationView) {
       setTimeout(() => {
         ideationControls.start("visible");
-      }, 800);
+      }, 1500);
     }
   }, [ideationControls, inIdeationView]);
 
   const antidoteVariant = {
     visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 1 } },
-    hidden: { opacity: 0, y: -80, scale: 1 },
+    hidden: { opacity: 0, y: -80, scale: 1.01 },
   };
 
   const btnVariants = {
     visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 1 } },
-    hidden: { opacity: 0, y: -80, scale: 1 },
+    hidden: { opacity: 0, y: -80, scale: 1.01 },
   };
   const lineVariants = {
     visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 1 } },
@@ -89,22 +91,22 @@ const AnimatedText = () => {
   };
   const strategyVariants = {
     visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 1 } },
-    hidden: { opacity: 0, y: -65, scale: 1 },
+    hidden: { opacity: 0, y: -30, scale: 1.01 },
   };
 
   const messageVariants = {
     visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 1 } },
-    hidden: { opacity: 0, y: -65, scale: 1 },
+    hidden: { opacity: 0, y: -45, scale: 1.01 },
   };
 
   const designVariants = {
     visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 1 } },
-    hidden: { opacity: 0, y: -65, scale: 1 },
+    hidden: { opacity: 0, y: -65, scale: 1.01 },
   };
 
   const ideationVariants = {
     visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 1 } },
-    hidden: { opacity: 0, y: -65, scale: 1 },
+    hidden: { opacity: 0, y: -65, scale: 1.01 },
   };
   const content = [
     "Compassion is the antidote to the hyper-",
@@ -113,6 +115,20 @@ const AnimatedText = () => {
     "we’re choosing a different path. We believe",
     "that building power through community and",
     "kindness is truly revolutionary.",
+  ];
+
+  const contentMobile = [
+    "Compassion is the",
+    "antidote to the hyper-",
+    "individualism of our",
+    "capitalist world. In a",
+    "society that often pits us",
+    "against each other, we’re",
+    "choosing a different path.",
+    " We believe that building",
+    "power through community",
+    "and kindness is truly",
+    "revolutionary."
   ];
 
   return (
@@ -127,6 +143,10 @@ const AnimatedText = () => {
       <div className="animated">
         <ScrollText content={content} />
       </div>
+      <div className="animated-mobile ">
+        <ScrollText content={contentMobile} />
+      </div>
+      
       <div className="free-text ">
         {/* <img
           data-aos="zoom-in-up"
@@ -156,12 +176,12 @@ const AnimatedText = () => {
         >
           <button
             // data-aos="fade-down"
-            className="start"
+            className="pressura"
           >
             CORE SERVICES
           </button>
         </motion.div>
-        <div className="mobile">
+        <div className="mobile pressura">
           <p>CORE</p>
           <p>SERVICES</p>
         </div>

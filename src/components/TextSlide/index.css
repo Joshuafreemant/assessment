@@ -22,7 +22,7 @@
   display: flex;
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 50vh;
   margin: auto;
   background-color: #AFA9A1;
   overflow: hidden;
@@ -101,8 +101,8 @@
   .text-slide {
     height: 50vh;
   }
-  .text-slide h1 {
-    font-size: 150px;
+  .m-scroll__title h1 {
+    font-size: 80px;
   }
 }
 

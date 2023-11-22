@@ -25,7 +25,7 @@ const About = () => {
       setTimeout(() => {
         firstControls.start("visible");
 
-      }, 400);
+      }, 1000);
     }
   }, [firstControls, inFirstView]);
   useEffect(() => {
@@ -38,20 +38,24 @@ const About = () => {
 
   useEffect(() => {
     if (inImageView) {
-      imageControls.start("visible");
+      setTimeout(() => {
+        imageControls.start("visible");
+      }, 1100);
     }
   }, [imageControls, inImageView]);
 
   useEffect(() => {
     if (inLineView) {
-      lineControls.start("visible");
+      setTimeout(() => {
+        lineControls.start("visible");
+      }, 1400);
     }
   }, [lineControls, inLineView]);
   useEffect(() => {
     if (inBtnView) {
       setTimeout(() => {
         btnControls.start("visible");
-      }, 500);
+      }, 800);
     }
   }, [btnControls, inBtnView]);
   useEffect(() => {
@@ -85,7 +89,7 @@ const About = () => {
   };
   const thirdVariants = {
     visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 1 } },
-    hidden: { opacity: 0, y: -80, scale: 1 },
+    hidden: { opacity: 0, y: -100, scale: 1 },
   };
   return (
     <div className="about">
