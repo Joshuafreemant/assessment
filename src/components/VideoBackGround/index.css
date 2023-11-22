@@ -39,7 +39,7 @@
 }
 .dropdown-overlay {
   position: absolute;
-  bottom: 10%;
+  bottom: 6%;
   left: 50%;
   transform: translate(-50%, -50%); /* Center the text container */
   padding: 20px;
@@ -97,7 +97,7 @@
     margin-top: -10px;
   }
   .dropdown-overlay {
-    bottom: 4%;
+    bottom: 7%;
   }
   .red-dot {
     top: 4%;
