@@ -52,4 +52,5 @@ body,
 .rotate-90 {
   transform: rotate(-90deg) !important;
   width: 340px !important;
+  margin-bottom: 60px;
 }
