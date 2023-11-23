@@ -81,6 +81,25 @@
   display: none;
 }
 @media only screen and (max-width: 768px) {
+  .text-overlay-p {
+    top: 12%;
+   
+  }
+  .dropdown-overlay {
+    
+    width: 50px;
+    height: 35px;
+  
+  }
+  .arrow-down {
+    color: #fff;
+  }
+  .dropdown-overlay:hover {
+    width: 55px;
+    height: 40px;
+  
+  }
+
  
   .mobile{
     display: flex;

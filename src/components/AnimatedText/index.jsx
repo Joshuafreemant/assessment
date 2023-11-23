@@ -132,7 +132,7 @@ const AnimatedText = () => {
   ];
 
   return (
-    <div className="animated-bg">
+    <div className="animated-bg" id="highlighted-texts">
       <div className="top-info">
         <h1 className="antidote heading">ANTIDOTE</h1>
         <div className="faded-btn">
@@ -143,7 +143,7 @@ const AnimatedText = () => {
       <div className="animated">
         <ScrollText content={content} />
       </div>
-      <div className="animated-mobile ">
+      <div className="animated-mobile " >
         <ScrollText content={contentMobile} />
       </div>
       

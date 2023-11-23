@@ -2,6 +2,7 @@ import React from "react";
 import "./index.css";
 import { LogoSvg, MobileLogoSvg, TabLogoSvg } from "../../assets/Icons";
 import { SlArrowDown } from "react-icons/sl";
+import { HashLink } from "react-router-hash-link";
 
 const VideoBackground = () => {
   return (
@@ -14,19 +15,21 @@ const VideoBackground = () => {
       </video>
 
       <div className="desktop text-overlay">
-        <LogoSvg/>
+        <LogoSvg />
       </div>
       <div className="mobile text-overlay">
-        <MobileLogoSvg/>
+        <MobileLogoSvg />
       </div>
 
       <div className="tab text-overlay">
         <TabLogoSvg />
       </div>
 
-      <div className="dropdown-overlay">
-        <SlArrowDown className="arrow-down" />
-      </div>
+      <HashLink to="/#highlighted-texts">
+        <div className="dropdown-overlay">
+          <SlArrowDown className="arrow-down" />
+        </div>
+      </HashLink>
 
       <div className="red-dot"></div>
     </div>

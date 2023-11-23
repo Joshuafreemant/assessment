@@ -123,6 +123,7 @@
 @media only screen and (max-width: 768px) {
   .about {
     padding: 50px 20px;
+    width: 100%;
   }
   .about .bottom-text-about {
     font-size: 30px;
@@ -134,9 +135,9 @@
   }
   .about .bottom-text {
     font-size: 30px;
-    text-align: center;
+    text-align: left;
     width: 100%;
-    padding: 0px 25px;
+    padding: 0px 10px;
   }
   .avatar {
     /* margin-right: 50px; */
@@ -164,15 +165,24 @@
   }
   .about-bottom{
     padding: 0px 5px;
+    width: 100%;
   }
   .bottom-btn {
-    padding: 22px 0px;
-    width: 310px;
+    padding: 22px 55px;
+width: 100%;
  
   }
   .bottom-btn-text {
    font-size: 22px;
  
+  }
+  .btn-padding{
+text-align: left;
+display: flex;
+align-items: start;
+justify-content: start;
+width: 100%;
+padding: 0px 5px;
   }
 }
 

@@ -152,17 +152,21 @@ const About = () => {
             Available for 40 hours a month. One project at a time. Zero Cost.
           </p>
         </motion.div>
+        <div className="btn-padding">
         <motion.div
           ref={btnRef}
           animate={btnControls}
           initial="hidden"
           variants={btnVariants}
+          
         >
+
           <div className="bottom-btn">
             <BsLightningCharge className="charge-btn" />
             <p className="bottom-btn-text start">Start Something</p>
           </div>
         </motion.div>
+        </div>
       </div>
     </div>
   );

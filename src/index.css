@@ -19,6 +19,10 @@
   src:  url('/public/Gerova.woff') format('woff'); 
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body,
 #root {
   margin: 0;
@@ -51,6 +55,6 @@ body,
 }
 .rotate-90 {
   transform: rotate(-90deg) !important;
-  width: 340px !important;
+  width: 386px !important;
   margin-bottom: 60px;
 }
