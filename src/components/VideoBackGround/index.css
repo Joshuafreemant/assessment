@@ -30,7 +30,6 @@
   z-index: 1000;
 }
 
-
 .text-overlay-p p {
   font-size: 22px;
   color: #fff; /* Text color */
@@ -47,7 +46,7 @@
   border-radius: 50%;
   border: 1px solid #fff;
   width: 70px;
-  height: 50px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -60,36 +59,27 @@
 }
 .dropdown-overlay:hover {
   width: 75px;
-  height: 53px;
+  height: 42px;
   z-index: 1000;
-
 }
 .red-dot {
-  position: absolute;
-  bottom: 8%;
-  right: 5%;
-  background-color: #f00808;
-  border-radius: 50%;
-  width: 15px;
-  height: 15px;
-  z-index: 1000;
-}
-.mobile{
   display: none;
 }
-.tab{
+.mobile {
+  display: none;
+}
+.tab {
   display: none;
 }
 @media only screen and (max-width: 768px) {
   .text-overlay-p {
     top: 12%;
-   
   }
   .dropdown-overlay {
-    
-    width: 50px;
+    bottom: 12%;
+
+    width: 60px;
     height: 35px;
-  
   }
   .arrow-down {
     color: #fff;
@@ -97,39 +87,45 @@
   .dropdown-overlay:hover {
     width: 55px;
     height: 40px;
-  
   }
 
- 
-  .mobile{
+  .mobile {
     display: flex;
   }
-  .desktop, .tab{
+  .desktop,
+  .tab {
     display: none;
   }
   .text-overlay-p {
     top: 12%;
-   
   }
   .text-overlay-p p {
     font-size: 15px;
     margin-top: -10px;
   }
-  .dropdown-overlay {
-    bottom: 9%;
-  }
+
   .red-dot {
+    display: block;
     top: 4%;
     right: 8%;
+    position: absolute;
+ 
+  background-color: #f00808;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  z-index: 1000;
   }
+  
 }
 @media only screen and (min-width: 768px) and (max-width: 1025px) {
   /* Add your tablet-specific styles here */
- 
-  .tab{
+
+  .tab {
     display: flex;
   }
-  .desktop, .mobile{
+  .desktop,
+  .mobile {
     display: none;
   }
   .text-overlay-p p {

@@ -24,7 +24,6 @@ const About = () => {
     if (inFirstView) {
       setTimeout(() => {
         firstControls.start("visible");
-
       }, 1000);
     }
   }, [firstControls, inFirstView]);
@@ -94,78 +93,81 @@ const About = () => {
   return (
     <div className="about">
       <div className="avatar">
-        <motion.div
+        {/* <motion.div
           ref={imageRef}
           animate={imageControls}
           initial="hidden"
           variants={imageVariants}
-        >
+        > */}
           <img src="/Avatar.png" alt="" />
 
           <p className="pressura">P.SENAKA</p>
-        </motion.div>
+        {/* </motion.div> */}
       </div>
       <div className="bottom-line"></div>
-      <motion.div
+      {/* <motion.div
         ref={firstRef}
         animate={firstControls}
         initial="hidden"
         variants={firstVariant}
-      >
+      > */}
         <p className="bottom-text-about animate-highlight">
           For over a decade, I’ve worked at the intersection of design,
           behavioural science and technology. Helping companies like Airbnb,
           Google, PayPal & Fitbit execute intelligent and elegant products.
         </p>
-      </motion.div>
-      <motion.div
+      {/* </motion.div> */}
+      {/* <motion.div
         ref={secondRef}
         animate={secondControls}
         initial="hidden"
         variants={secondVariants}
-      >
+      > */}
         <p className="bottom-text-about animate-highlight">
-          Over a period of travel, I’ve experienced the cultures and
-          perspectives of people in over 90 countries. These interactions have
-          deepened my understanding of global injustices and shifted my focus
-          toward projects that tackle today’s most pressing issues.
+          Over a span of travel, I’ve experienced the cultures and perspectives
+          of people in over ninety countries. These interactions have deepened
+          my understanding of global complexities & disparities, leading me to
+          realign my focus towards projects that address today’s most pressing
+          issues.
         </p>
-      </motion.div>
+      {/* </motion.div> */}
 
       <div className="about-bottom">
-        <motion.div
+        {/* <motion.div
           ref={lineRef}
           animate={lineControls}
           initial="hidden"
           variants={lineVariants}
-        >
+        > */}
           <div className="bottom-line second-bottom-line"></div>
-        </motion.div>
+        {/* </motion.div> */}
 
-        <motion.div
+        {/* <motion.div
           ref={thirdRef}
           animate={thirdControls}
           initial="hidden"
           variants={thirdVariants}
-        >
+        > */}
           <p className="bottom-text animate-highlight">
             Available for 40 hours a month. One project at a time. Zero Cost.
           </p>
-        </motion.div>
+        {/* </motion.div> */}
         <div className="btn-padding">
-        <motion.div
-          ref={btnRef}
-          animate={btnControls}
-          initial="hidden"
-          variants={btnVariants}
-          
-        >
-
-          <div className="bottom-btn">
-            <BsLightningCharge className="charge-btn" />
-            <p className="bottom-btn-text start">Start Something</p>
-          </div>
-        </motion.div>
+          {/* <motion.div
+            ref={btnRef}
+            animate={btnControls}
+            initial="hidden"
+            variants={btnVariants}
+          > */}
+            <div className="bottom-btn">
+              <BsLightningCharge className="charge-btn" />
+              <p className="bottom-btn-text start">
+                <a href="https://tripetto.app/run/MCQV9R8OWT">
+                  Start Something
+                </a>
+              </p>
+            </div>
+          {/* </motion.div> */}
         </div>
       </div>
     </div>

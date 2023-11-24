@@ -24,8 +24,8 @@
 .m-scroll__title > div {
   padding-left: 400px;
   display: flex;
-  -webkit-animation: scrollText 40s infinite linear;
-  animation: scrollText 40s infinite linear;
+  -webkit-animation: scrollText 60s infinite linear;
+  animation: scrollText 60s infinite linear;
 }
 .m-scroll__title h1 {
   margin: 0;

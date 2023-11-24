@@ -128,7 +128,7 @@ const AnimatedText = () => {
     " We believe that building",
     "power through community",
     "and kindness is truly",
-    "revolutionary."
+    "revolutionary.",
   ];
 
   return (
@@ -137,16 +137,18 @@ const AnimatedText = () => {
         <h1 className="antidote heading">ANTIDOTE</h1>
         <div className="faded-btn">
           <BsLightningCharge className="charge-btn" />
-          <p className="faded-text start desktop">Start</p>
+          <p className="faded-text start desktop">
+            <a href="https://tripetto.app/run/MCQV9R8OWT">Start</a>
+          </p>
         </div>
       </div>
       <div className="animated">
         <ScrollText content={content} />
       </div>
-      <div className="animated-mobile " >
+      <div className="animated-mobile ">
         <ScrollText content={contentMobile} />
       </div>
-      
+
       <div className="free-text ">
         {/* <img
           data-aos="zoom-in-up"
@@ -154,52 +156,52 @@ const AnimatedText = () => {
           src="/pitline.svg"
           alt=""
         /> */}
-        <motion.div
+        {/* <motion.div
           ref={ref}
           animate={controls}
           initial="hidden"
           variants={antidoteVariant}
-        >
+        > */}
           <p className="animated-text animated-texts">
             Antidote is a zero-cost consulting agency for grassroots
             non-profit’s & progressive forces.
           </p>
-        </motion.div>
+        {/* </motion.div> */}
       </div>
 
       <div className="services">
-        <motion.div
+        {/* <motion.div
           ref={btnref}
           animate={btnControls}
           initial="hidden"
           variants={btnVariants}
-        >
+        > */}
           <button
             // data-aos="fade-down"
             className="pressura"
           >
             CORE SERVICES
           </button>
-        </motion.div>
+        {/* </motion.div> */}
         <div className="mobile pressura">
           <p>CORE</p>
           <p>SERVICES</p>
         </div>
-        <motion.div
+        {/* <motion.div
           ref={lineref}
           animate={lineControls}
           initial="hidden"
           variants={lineVariants}
-        >
+        > */}
           <div className="line"></div>
-        </motion.div>
+        {/* </motion.div> */}
 
-        <motion.div
+        {/* <motion.div
           ref={strategyref}
           animate={strategyControls}
           initial="hidden"
           variants={strategyVariants}
-        >
+        > */}
           <div className="title-text">
             <label htmlFor="" className="pressura title-label">
               STRATEGY
@@ -209,14 +211,14 @@ const AnimatedText = () => {
               foundation for clear and focused progress.
             </p>
           </div>
-        </motion.div>
+        {/* </motion.div> */}
 
-        <motion.div
+        {/* <motion.div
           ref={messageref}
           animate={messageControls}
           initial="hidden"
           variants={messageVariants}
-        >
+        > */}
           <div className="title-text">
             <label htmlFor="" className="pressura title-label">
               MESSAGING
@@ -226,14 +228,14 @@ const AnimatedText = () => {
               beyond like-minded circles.
             </p>
           </div>
-        </motion.div>
+        {/* </motion.div> */}
 
-        <motion.div
+        {/* <motion.div
           ref={designref}
           animate={designControls}
           initial="hidden"
           variants={designVariants}
-        >
+        > */}
           <div className="title-text">
             <label htmlFor="" className="pressura title-label">
               DESIGN
@@ -243,14 +245,14 @@ const AnimatedText = () => {
               people to action.
             </p>
           </div>
-        </motion.div>
+        {/* </motion.div> */}
 
-        <motion.div
+        {/* <motion.div
           ref={ideationref}
           animate={ideationControls}
           initial="hidden"
           variants={ideationVariants}
-        >
+        > */}
           <div className="title-text">
             <label htmlFor="" className="pressura title-label">
               IDEATION
@@ -260,7 +262,7 @@ const AnimatedText = () => {
               iteration.
             </p>
           </div>
-        </motion.div>
+        {/* </motion.div> */}
       </div>
     </div>
   );

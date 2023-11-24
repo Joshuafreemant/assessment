@@ -61,7 +61,7 @@ section {
   justify-content: space-between;
 }
 .animated-bg {
-  padding: 40px 120px;
+  padding: 40px 100px;
   background-color: #BAB4AD;
 }
 .heading {
@@ -78,6 +78,10 @@ section {
   box-shadow: 0px 1px 2px #00000029;
 
   cursor: pointer;
+}
+.faded-btn  p >a{
+  text-decoration: none;
+  color: #000;
 }
 .faded-btn:hover {
   background-color: #fdf3d6;
@@ -104,13 +108,13 @@ section {
   position: relative;
   margin: 150px auto;
   text-align: center;
-  width: 520px;
+  width: 600px;
 }
 .animated-text-scroll {
   font-size: 55px;
 }
 .animated-texts {
-  font-size: 70px;
+  font-size: 80px;
 }
 .animated-zoom {
   font-size: 70px;
@@ -241,10 +245,10 @@ section {
   .animated-mobile {
     font-size: 30px;
     text-align: left;
-    width: 95%;
+    width: 98%;
   }
   .animated-text {
-    font-size: 38px;
+    font-size: 34px;
     text-align: left;
   }
   .animated-texts {
@@ -260,7 +264,7 @@ section {
     /* top: 100px; */
   }
   .title-text {
-    align-items: start;
+    align-items: flex-start;
   }
   .title-label {
     padding: 0px 10px;
@@ -278,7 +282,7 @@ section {
 
   }
   .services{
-    align-items: start;
+    align-items: flex-start;
   }
   .services button {
     display: none;
